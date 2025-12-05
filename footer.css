@@ -31,25 +31,28 @@ footer {
     justify-content: space-between;
     align-items: flex-start;
     gap: 30px;
-    max-width: 1200px;
     margin: 0 auto;
+    max-width: 1200px;
 }
 
 body {
     font-family: "Inter", sans-serif;
 }
 
-
 .footer-venstre,
-.footer-midte,
-.footer-hoejre {
+.footer-midte {
     flex: 1;
+}
+
+.footer-hoejre {
+    flex: 0.8;
 }
 
 .google-kort {
     width: 100%;
     max-width: 300px;
     height: 220px;
+    margin: 0 auto;
 }
 
 h4 {
@@ -59,10 +62,12 @@ h4 {
     text-transform: uppercase;
 }
 
-p,
+p {
+    margin-bottom: 10px;
+}
+
 li {
-    margin-bottom: 8px;
-    text-align: start;
+    margin-bottom: 15px;
 }
 
 ul {
@@ -105,10 +110,11 @@ ul {
         gap: 30px;
     }
 
+
     .footer-midte,
     .footer-hoejre,
     .footer-venstre {
-        width: 90%;
+        width: 100%;
         flex: none;
     }
 
@@ -120,7 +126,7 @@ ul {
 /* ----------------- Breakpoint 400px (mobil) ----------------- */
 @media (max-width: 400px) {
     footer {
-        padding: 40px 20px;
+        padding: 40px;
     }
 
     .footer-midte,
