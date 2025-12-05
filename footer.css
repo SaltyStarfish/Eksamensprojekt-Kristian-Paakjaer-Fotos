@@ -35,10 +35,15 @@ footer {
     margin: 0 auto;
 }
 
+body {
+    font-family: "Inter", sans-serif;
+}
+
+
 .footer-venstre,
 .footer-midte,
 .footer-hoejre {
-    width: 33%;
+    flex: 1;
 }
 
 .google-kort {
@@ -48,10 +53,10 @@ footer {
 }
 
 h4 {
-    font-size: 20px;
+    font-size: 24px;
+    font-family: "utopia-std", serif;
     margin-bottom: 10px;
     text-transform: uppercase;
-    font-weight: bold;
 }
 
 p,
@@ -82,7 +87,7 @@ ul {
 .sociale-medier img {
     width: 48px;
     height: 48px;
-    margin-top: 15%;
+    margin-top: 16%;
 }
 
 
@@ -104,13 +109,13 @@ ul {
     .footer-hoejre,
     .footer-venstre {
         width: 90%;
+        flex: none;
     }
 
     .sociale-medier img {
         margin-top: 10px;
     }
 }
-
 
 /* ----------------- Breakpoint 400px (mobil) ----------------- */
 @media (max-width: 400px) {
