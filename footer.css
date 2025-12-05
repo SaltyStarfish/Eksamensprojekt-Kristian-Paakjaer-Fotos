@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /*Farver*/
+    --baggrundsfarve-primaer: #FDFCFC;
+    --baggrundsfarve-sekundaer: #FBF9F7;
+    --baggrundsfarve-tertiaer: #F4F0EA;
+    --tekstfarve-faded: #AEACAB;
+    --tekstfarve-primaer: #272626;
+    --brand-tekstfarve-lys: #F0F5F8;
+    --brandfarve-primaer: #025B6F;
+    --brandfarve-primaer-hover: #2E7B92;
+    --baggrundsfarve-primaer-click: #01404F;
+    --sekundaer-brandfarve: #BF7C41;
+}
+
+
+footer {
+    padding: 60px 40px;
+    width: 100%;
+    color: var(--brand-tekstfarve-lys);
+    background-color: var(--brandfarve-primaer);
+}
+
+.footer-indhold {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-venstre,
+.footer-midte,
+.footer-hoejre {
+    width: 33%;
+}
+
+.google-kort {
+    width: 100%;
+    max-width: 300px;
+    height: 220px;
+}
+
+h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+p,
+li {
+    margin-bottom: 8px;
+    text-align: start;
+}
+
+ul {
+    list-style: none;
+}
+
+.links a {
+    text-decoration: none;
+    color: var(--brand-tekstfarve-lys);
+    transition: all 0.3s ease-in-out;
+}
+
+.links a:hover {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.sociale-medier a {
+    margin-right: 10px;
+}
+
+.sociale-medier img {
+    width: 48px;
+    height: 48px;
+    margin-top: 15%;
+}
+
+
+/* ----------------- Breakpoint 800px (tablet) ----------------- */
+@media (max-width: 800px) {
+
+    footer {
+        padding: 50px 25px;
+    }
+
+    .footer-indhold {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer-midte,
+    .footer-hoejre,
+    .footer-venstre {
+        width: 90%;
+    }
+
+    .sociale-medier img {
+        margin-top: 10px;
+    }
+}
+
+
+/* ----------------- Breakpoint 400px (mobil) ----------------- */
+@media (max-width: 400px) {
+    footer {
+        padding: 40px 20px;
+    }
+
+    .footer-midte,
+    .footer-hoejre,
+    .footer-venstre {
+        width: 100%;
+    }
+
+    .google-kort iframe {
+        max-width: 100%;
+        height: 200px;
+    }
+
+    .sociale-medier img {
+        width: 36px;
+        height: 36px;
+    }
+}
