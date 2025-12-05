@@ -29,6 +29,9 @@ header{
   width: 100%;
   color: var(--brand-tekstfarve-lys);
   background-color: var(--brandfarve-primaer);
+  font-family: "utopia-std", serif;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 #responsive-top-nav{
@@ -37,6 +40,39 @@ header{
   align-items: center;
   padding-inline: 16px;
   height: 40px;
+  text-transform: uppercase;
+}
+
+#burger{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+#burger .linje1, .linje2, .linje3 {
+  width: 24px;
+  height: 2px;
+  background-color: var(--brand-tekstfarve-lys);
+  margin: 3px 0px;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/*animation: https://www.w3schools.com/howto/howto_css_menu_icon.asp*/
+.change .linje1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .linje2 {opacity: 0;}
+
+.change .linje3 {
+  transform: translate(0, -11px) rotate(45deg);
 }
 
 header menu{
@@ -63,8 +99,12 @@ header a{
     padding-inline: 16px;
   }
 
-  #responsive-top-nav button, header menu li:first-of-type{
+  #burger, header menu li:first-of-type{
     display: none;
+  }
+
+  #responsive-top-nav{
+      font-size: 24px;
   }
 
   header menu{

@@ -1,0 +1,23 @@
+/* Definér variable:
+https://www.w3schools.com/css/css3_variables.asp */
+
+:root {
+  /*Farver*/
+  --baggrundsfarve-primaer: #FDFCFC; 
+  --baggrundsfarve-sekundaer: #FBF9F7; 
+  --baggrundsfarve-tertiaer: #F4F0EA; 
+  --tekstfarve-faded: #AEACAB; 
+  --tekstfarve-primaer: #272626; 
+  --brand-tekstfarve-lys: #F0F5F8;
+  --brandfarve-primaer: #025B6F; 
+  --brandfarve-primaer-hover: #2E7B92; 
+  --baggrundsfarve-primaer-click: #01404F; 
+  --sekundaer-brandfarve: #BF7C41;
+}
+
+/*Reset CSS*/
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
