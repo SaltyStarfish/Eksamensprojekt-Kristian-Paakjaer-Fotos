@@ -61,7 +61,18 @@ header{
   background-color: var(--brand-tekstfarve-lys);
   margin: 3px 0px;
   border-radius: 2px;
-  transition: 0.4s;
+  transition: 0.3s;
+}
+
+/*animation: https://www.w3schools.com/howto/howto_css_menu_icon.asp*/
+.change .linje1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .linje2 {opacity: 0;}
+
+.change .linje3 {
+  transform: translate(0, -11px) rotate(45deg);
 }
 
 header menu{
