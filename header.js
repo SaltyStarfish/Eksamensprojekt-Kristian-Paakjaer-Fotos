@@ -1,18 +1,13 @@
-const burger = document.querySelector("#burger");
-const burger_menu = document.querySelector("nav>menu");
+const burger = document.querySelector("#btn_burger");
+let responsive_topnav = document.querySelector(".responsive-topnav");
 
-burger.onclick = visBurgerMenu; 
+burger.onclick = toggleBurgerMenu; 
 
-function visBurgerMenu() {
-  //https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
-  if (burger_menu.style.display === "none") {
-    burger_menu.style.display = "block";
-  } 
-  else {
-    burger_menu.style.display = "none";
+function toggleBurgerMenu() {
+  if (responsive_topnav.className === "responsive-topnav") {
+    responsive_topnav.className += " vertical-menu";
+  } else {
+    responsive_topnav.className = "responsive-topnav";
   }
 }
-
-
-
 
