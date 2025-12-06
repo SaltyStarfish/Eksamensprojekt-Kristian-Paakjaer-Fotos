@@ -63,7 +63,7 @@ header{
 /*---Burger-animation*/
 /*øverste linje roterer og rykker sig ned mod midten*/
 .vertical-menu #btn_burger span:nth-of-type(1){
-  transform: translateY(6px) rotate(-45deg);
+  transform: translateY(6.6px) rotate(-45deg);
 }
 /*midterste linje bliver så smal at den ikke kan ses*/
 .vertical-menu #btn_burger span:nth-of-type(2){
