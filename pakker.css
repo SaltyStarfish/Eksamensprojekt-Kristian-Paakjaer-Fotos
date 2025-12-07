@@ -1,0 +1,47 @@
+:root {
+  /*Farver*/
+  --baggrundsfarve-primaer: #FDFCFC; 
+  --baggrundsfarve-sekundaer: #FBF9F7; 
+  --baggrundsfarve-tertiaer: #F4F0EA; 
+  --tekstfarve-faded: #AEACAB; 
+  --tekstfarve-primaer: #272626; 
+  --brand-tekstfarve-lys: #F0F5F8;
+  --brandfarve-primaer: #025B6F; 
+  --brandfarve-primaer-hover: #2E7B92; 
+  --baggrundsfarve-primaer-click: #01404F; 
+  --sekundaer-brandfarve: #BF7C41;
+}
+
+.pakker-container{
+  display: flex;
+  justify-content: center;
+  gap: 12px 24px;
+  flex-wrap: wrap;
+}
+
+.pakke{
+  display: grid;
+  border-left: 6px solid var(--sekundaer-brandfarve);
+  border-radius: 8px;
+  background-color: var(--baggrundsfarve-sekundaer);
+  color: var(--tekstfarve-primaer);
+  width: 264px;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.08), 0 1px 3px 0 rgba(0, 0, 0, 0.10);
+  padding: 18px 22px;
+}
+
+.pakke ul{
+  padding-inline-start: 24px;
+}
+
+.pakke button{
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--sekundaer-brandfarve);
+  color: var(--baggrundsfarve-primaer);
+  border: 0;
+  border-radius: 4px;
+  padding: 12px 8px;
+  border-radius: 0.25rem;
+  box-shadow: 0 -1px 3px 0 rgba(0, 0, 0, 0.10) inset;
+}
