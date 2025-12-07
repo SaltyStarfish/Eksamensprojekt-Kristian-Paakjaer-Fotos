@@ -92,7 +92,7 @@ header a{
 }
 
 @media screen and (min-width: 1024px){
-  header nav{/*indeholder logo og menu med nav-links, som plceres i hver sin side*/
+  header nav{/*indeholder logo og menu med nav-links, som placeres i hver sin side*/
     display: flex;
     justify-content: space-between;
     padding-inline: 16px;
