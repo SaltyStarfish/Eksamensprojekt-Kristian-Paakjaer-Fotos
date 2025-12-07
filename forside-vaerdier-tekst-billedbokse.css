@@ -21,17 +21,26 @@
     justify-content: center;
     align-items: center;
     gap: 60px;
-    margin: auto;
+    margin: 0 auto;
+    padding: 0 30px;
     max-width: 1200px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .tekstboks {
     max-width: 350px;
+    min-width: 250px;
 }
 
 .billedboks {
-   width: 100%;
-   height: auto;
+   max-width: 600px;
+   min-width: 250px;
+}
+
+.billedboks img {
+    width: 100%;
+    height: auto;
 }
 
 
@@ -49,31 +58,50 @@
      .tekst-billede-boks {
         gap: 40px;
         max-width: 90%;
+        padding: 0 20px;
      }
 
     .tekstboks {
-        max-width: 45%;
+        width: 100%;
     }
 
     .billedboks {
-        max-width: 45%;
+        width: 100%;
     }
 }
 
 /* ----------------- Breakpoint 400 (mobil) ----------------- */
 @media (max-width: 400px) {
-    .vaerdier-container, .tekst-billede-boks {
+    .tekst-billede-boks {
         flex-direction: column;
-        gap: 25px;
-        text-align: center;
+        gap: 20px;
+        width: 100%;
+        align-items: center;
+        padding: 0 15px;
+    }
+
+    .vaerdier-container {
+        flex-wrap: nowrap;
+        align-items: center;
     }
 
     .vaerdi img {
         width: 50px;
     }
 
-    .tekstboks
+    .tekstboks {
+        max-width: 100%;
+    }
+
     .billedboks {
-        max-width: 90%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .billedboks img {
+        width: 70%;
+        max-width: 300px;
+        height: auto;
     }
 }
