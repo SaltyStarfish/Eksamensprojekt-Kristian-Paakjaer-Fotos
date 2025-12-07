@@ -1,0 +1,53 @@
+:root {
+  /*Farver*/
+  --baggrundsfarve-primaer: #FDFCFC; 
+  --baggrundsfarve-sekundaer: #FBF9F7; 
+  --baggrundsfarve-tertiaer: #F4F0EA; 
+  --tekstfarve-faded: #AEACAB; 
+  --tekstfarve-primaer: #272626; 
+  --brand-tekstfarve-lys: #F0F5F8;
+  --brandfarve-primaer: #025B6F; 
+  --brandfarve-primaer-hover: #2E7B92; 
+  --baggrundsfarve-primaer-click: #01404F; 
+  --sekundaer-brandfarve: #BF7C41;
+}
+
+/*Reset CSS*/
+*{
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+ul.forside-kategorier{
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  grid-template-rows: repeat(5, minmax(min-content, 100px));
+
+  /* grid-auto-rows: 100px; */
+  gap: 10px;
+  padding: 12px;
+
+}
+
+.forside-kategorier li{
+  border-radius: 4px;
+  border: #272626 solid;
+}
+
+@media screen and (min-width: 534px){
+  ul.forside-kategorier{
+  grid-template-columns: repeat(6, 1fr);
+  }
+
+  .forside-kategorier li:nth-of-type(-n+3){
+    background-image: url(https://www-static.kristianpaakjaer.dk/wp-content/uploads/2025/02/fokuskasse-04.jpg);
+    grid-column: span 2;
+  }
+  
+    .forside-kategorier li:nth-of-type(n+4){
+    background-image: url(https://www-static.kristianpaakjaer.dk/wp-content/uploads/2025/02/fokuskasse-04.jpg);
+    grid-column: span 3;
+  }
+}
