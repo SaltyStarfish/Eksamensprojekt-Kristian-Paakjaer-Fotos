@@ -1,0 +1,40 @@
+:root {
+    /*Farver*/
+    --baggrundsfarve-primaer: #FDFCFC;
+    --baggrundsfarve-sekundaer: #FBF9F7;
+    --baggrundsfarve-tertiaer: #F4F0EA;
+    --tekstfarve-faded: #AEACAB;
+    --tekstfarve-primaer: #272626;
+    --brand-tekstfarve-lys: #F0F5F8;
+    --brandfarve-primaer: #025B6F;
+    --brandfarve-primaer-hover: #2E7B92;
+    --baggrundsfarve-primaer-click: #01404F;
+    --sekundaer-brandfarve: #BF7C41;
+}
+
+
+.faq-container {
+    width: 100%;
+    background-color: var(--baggrundsfarve-tertiaer);
+    padding: 300px 40px;
+    align-items: center;
+}
+
+.spoergsmaal {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+}
+
+.faq-ikon {
+    transition: transform 0.3s ease-in-out;
+}
+
+.svar {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
+}
+
