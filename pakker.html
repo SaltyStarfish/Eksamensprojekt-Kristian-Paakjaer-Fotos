@@ -27,15 +27,15 @@
           </ul>
           <p>Hvis der ikke afholdes reception, er det første time af festen</p>
           <p>Pris: <span class="pris">6.000</span>,- <br> + transport a 2,5 kr./km</p>
-          <button>Beregn din pris</button>
+          <button>Beregn din pris<span class="kryds"><span></span><span></span></span></button>
           <label for=".afstand">Skriv køreafstand fra Aalborg</label>
-          <span>
-            <input class="afstand" type="number" placeholder="0"> <p>km</p>
-          </span>
-          <span>
+          <div class="pris-input">
+            <input class="afstand" type="number" placeholder="0" min="0"> <p>km</p>
+          </div>
+          <div class="pris-output">
             <p>Estimeret pris = </p>
             <output></output>
-          </span>
+          </div>
         </div>
       </div>
     </section>

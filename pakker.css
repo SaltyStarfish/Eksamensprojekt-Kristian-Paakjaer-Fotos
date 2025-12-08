@@ -27,7 +27,7 @@
   color: var(--tekstfarve-primaer);
   width: 264px;
   box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.08), 0 1px 3px 0 rgba(0, 0, 0, 0.10);
-  padding: 18px 22px;
+  padding: 22px 18px;
 }
 
 .pakke ul{
@@ -37,11 +37,49 @@
 .pakke button{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: var(--sekundaer-brandfarve);
   color: var(--baggrundsfarve-primaer);
   border: 0;
   border-radius: 4px;
-  padding: 12px 8px;
+  padding: 8px 12px;
   border-radius: 0.25rem;
   box-shadow: 0 -1px 3px 0 rgba(0, 0, 0, 0.10) inset;
+}
+
+button .kryds{
+  position: relative;
+  height: 12px;
+  width: 12px;
+}
+
+button .kryds > span{
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  height: 2px;
+  width: 12px;
+  background-color: var(--baggrundsfarve-primaer);
+  border-radius: 1px;
+  /* rotate:45deg; */
+  transition: all 0.3s;
+}
+
+button .kryds > span:first-child{
+  transform: rotate(90deg);
+}
+
+
+.pris-input{
+  display: flex;
+  gap: 4px;
+}
+
+.pris-input > *{
+  padding: 4px 4px;
+}
+
+.pris-output{
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--sekundaer-brandfarve)
 }
