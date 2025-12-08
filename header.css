@@ -25,9 +25,10 @@ header{
   position: sticky; /*bliver siddende i toppen*/
   color: var(--brand-tekstfarve-lys);
   background-color: var(--brandfarve-primaer);
-  font-family: "utopia-std", serif;
+  font-family: var(--utopia);
   font-size: 20px;
   font-weight: 400;
+  box-shadow: var(--inner-box-shadow);
 }
 
 .responsive-topnav{ /*indeholder logo og burger*/

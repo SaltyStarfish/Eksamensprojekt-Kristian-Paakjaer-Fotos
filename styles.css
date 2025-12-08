@@ -13,7 +13,14 @@ https://www.w3schools.com/css/css3_variables.asp */
   --brandfarve-primaer-hover: #2E7B92; 
   --baggrundsfarve-primaer-click: #01404F; 
   --sekundaer-brandfarve: #BF7C41;
+/*Skygger*/
+  --modern-box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.08), 0 1px 3px 0 rgba(0, 0, 0, 0.10);
+  --inner-box-shadow: 0 -1px 3px 0 rgba(0, 0, 0, 0.10) inset;
+/*Font-family*/
+  --inter: "Inter", sans-serif;
+  --utopia: "Utopia-std", serif;
 }
+
 
 /*Reset CSS*/
 *{
