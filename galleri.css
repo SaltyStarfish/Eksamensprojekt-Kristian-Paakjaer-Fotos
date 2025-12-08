@@ -1,0 +1,25 @@
+.galleri-sektion {
+    max-width: 1000px;
+    position: relative;
+    margin: 20px auto;
+    align-items: center;
+}
+
+.galleri-slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.galleri-billeder {
+    display: flex;
+    gap: 20px;
+}
+
+.galleri-billeder img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.slider-knap {
+    position: absolute;
+}
