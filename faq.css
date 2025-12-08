@@ -36,8 +36,13 @@
 }
 
 .faq-ikon {
+    display: inline-block;
     transition: transform 0.3s ease-in-out;
     margin-left: 40px;
+}
+
+.spoergsmaal.active .faq-ikon {
+    transform: rotate(45deg);
 }
 
 .svar {

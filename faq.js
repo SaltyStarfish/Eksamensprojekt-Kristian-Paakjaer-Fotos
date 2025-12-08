@@ -11,6 +11,5 @@ for (let i = 0; i < spoergsmaal.length; i++) {
     svar.classList.toggle("aaben");
 
     const ikon = this.querySelector(".faq-ikon");
-    ikon.textContent = ikon.textContent === "+" ? "-" : "+";
 });
 }
