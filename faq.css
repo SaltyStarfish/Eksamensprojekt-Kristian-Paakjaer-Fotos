@@ -12,17 +12,27 @@
     --sekundaer-brandfarve: #BF7C41;
 }
 
+.faq-sektion {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--baggrundsfarve-tertiaer);
+    padding: 40px 0;
+}
 
 .faq-container {
-    width: 100%;
-    background-color: var(--baggrundsfarve-tertiaer);
-    padding: 300px 40px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    text-align: center;
 }
 
 .spoergsmaal {
-    display: flex;
-    justify-content: space-between;
+    display: block;
+    margin: 10px auto;
     border: none;
     text-align: left;
     cursor: pointer;
@@ -30,6 +40,7 @@
 
 .faq-ikon {
     transition: transform 0.3s ease-in-out;
+    margin-left: 40px;
 }
 
 .svar {
