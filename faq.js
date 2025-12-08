@@ -5,11 +5,11 @@ for (let i = 0; i < spoergsmaal.length; i++) {
 
     this.classList.toggle("active");
 
-    const svar = this.nextElementSibling;
+    const faqContainer = this.closest(".faq");
+    const svar = faqContainer.querySelector(".svar");
 
     svar.classList.toggle("aaben");
 
     const ikon = this.querySelector(".faq-ikon");
-    ikon.textContent = ikon.textContent === "+" ? "-" : "+";
 });
 }
