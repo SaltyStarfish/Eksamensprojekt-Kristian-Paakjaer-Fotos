@@ -1,0 +1,126 @@
+/* Definér variable:
+https://www.w3schools.com/css/css3_variables.asp */
+
+:root {
+  /*Farver*/
+  --baggrundsfarve-primaer: #FDFCFC; 
+  --baggrundsfarve-sekundaer: #FBF9F7; 
+  --baggrundsfarve-tertiaer: #F4F0EA; 
+  --tekstfarve-faded: #AEACAB; 
+  --tekstfarve-primaer: #272626; 
+  --brand-tekstfarve-lys: #F0F5F8;
+  --brandfarve-primaer: #025B6F; 
+  --brandfarve-primaer-hover: #2E7B92; 
+  --baggrundsfarve-primaer-click: #01404F; 
+  --sekundaer-brandfarve: #BF7C41;
+}
+
+/*Reset CSS*/
+header *{
+  list-style: none;
+  text-decoration: none;
+}
+
+.btn_cta{
+  position: sticky; /*bliver siddende i toppen*/
+  color: var(--brand-tekstfarve-lys);
+  background-color: var(--brandfarve-primaer);
+  font-family: "utopia-std", serif;
+  font-size: 20px;
+  font-weight: 400;
+  box-shadow: var(--inner-box-shadow);
+}
+
+.responsive-topnav{ /*indeholder logo og burger*/
+  display: flex;
+  justify-content: space-between; /*placerer dem i hver sin side af headeren*/
+  padding-inline: 16px 4px;
+  height: max(100%, 48px); /*100% højde, når nav-højden er mere end 48px*/
+  text-transform: uppercase;
+}
+
+#btn_burger{ /*indeholder animeret burger*/
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;  
+  height: 48px;
+  width: 48px;
+  cursor: pointer;
+  padding: 12px;
+  /*nulstil knap-udseenet*/
+  background-color: transparent;
+  border: 0;
+}
+
+#btn_burger span{ /*hver streg i den animerede burger*/
+  width:75%;
+  height: 2px;
+  background-color: var(--brand-tekstfarve-lys);
+  border-radius: 1px;
+  transition: all 0.3s; /*giver synlig burger-animation*/
+}
+
+/*---Burger-animation*/
+/*øverste linje roterer og rykker sig ned mod midten*/
+.vertical-menu #btn_burger span:nth-of-type(1){
+  transform: translateY(6.6px) rotate(-45deg);
+}
+/*midterste linje bliver så smal at den ikke kan ses*/
+.vertical-menu #btn_burger span:nth-of-type(2){
+  width: 0px;
+}
+/*nederste linje roterer og rykker sig op mod midten*/
+.vertical-menu #btn_burger span:nth-of-type(3){
+  transform: translateY(-6px) rotate(45deg);
+}
+/*---Burger-animation slut*/
+
+header menu{ /*vises som udgangspunkt ikke ved mobil-visning*/
+  display: none;
+}
+
+header .vertical-menu ~ menu{ 
+  display:block;
+}
+
+header a{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  color: inherit;
+}
+
+@media screen and (min-width: 1024px){
+  header nav{/*indeholder logo og menu med nav-links, som placeres i hver sin side*/
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 16px;
+  }
+
+  header a{ /*nav-links har fuld højde og padding i stedet for gaps, så hele området bliver clickable og ikke kun teksten*/
+    height: 80px;
+    padding-inline: 16px;
+    justify-content: center;
+  }
+
+  .responsive-topnav{/*indeholder kun logo*/
+    font-size: 24px;
+    padding: 0;
+  }
+
+/*fjerner burgeren og "forside"-punktet*/
+  #btn_burger, header menu li:first-of-type{
+    display: none;
+  }
+
+  header menu{/*navigationen vises horisontalt på laptop*/
+    display:flex;
+  }
+  
+  header .vertical-menu ~ menu{
+    /*hvis burger-menu er åbnet i mobil-visning og vinduet gøres større igen, vises menuen horisontalt*/
+    display:flex;
+  }
+}
