@@ -103,6 +103,25 @@ header a{
     height: 80px;
     padding-inline: 16px;
     justify-content: center;
+    position: relative;
+  }
+
+  .header-link-hover-effekt{
+    background-color: var(--brand-tekstfarve-lys);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    transition: all 0.3s;
+  }
+
+  header a:hover .header-link-hover-effekt{
+    width: 100%;
+  }
+
+  header a:active{
+    background-color: var(--baggrundsfarve-primaer-click);
   }
 
   .responsive-topnav{/*indeholder kun logo*/
