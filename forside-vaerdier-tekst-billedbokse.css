@@ -3,19 +3,105 @@
     justify-content: center;
     gap: 80px;
     margin: 40px auto;
+    flex-wrap: wrap;
 }
 
 .vaerdi {
     text-align: center;
-    width: 120px;
-    height: 120px;
-    display: block;
-    margin: 0 auto;
+    width: 100px;
 }
 
 .vaerdi img {
     width: 80px;
-    height: 80px;
-    display: block;
+    height: auto;
+}
+
+.tekst-billede-boks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
     margin: 0 auto;
+    padding: 0 30px;
+    max-width: 1200px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.tekstboks {
+    max-width: 350px;
+    min-width: 250px;
+}
+
+.billedboks {
+   max-width: 600px;
+   min-width: 250px;
+}
+
+.billedboks img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* ----------------- Breakpoint 800px (tablet) ----------------- */
+@media (max-width: 800px) {
+    .vaerdier-container {
+    gap: 40px;
+    flex-wrap: nowrap;
+    }
+
+    .vaerdi img {
+        width: 60px;
+    }
+
+     .tekst-billede-boks {
+        gap: 40px;
+        max-width: 90%;
+        padding: 0 20px;
+     }
+
+    .tekstboks {
+        width: 100%;
+    }
+
+    .billedboks {
+        width: 100%;
+    }
+}
+
+/* ----------------- Breakpoint 400 (mobil) ----------------- */
+@media (max-width: 400px) {
+    .tekst-billede-boks {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        align-items: center;
+        padding: 0 15px;
+    }
+
+    .vaerdier-container {
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .vaerdi img {
+        width: 50px;
+    }
+
+    .tekstboks {
+        max-width: 100%;
+    }
+
+    .billedboks {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .billedboks img {
+        width: 70%;
+        max-width: 300px;
+        height: auto;
+    }
 }
