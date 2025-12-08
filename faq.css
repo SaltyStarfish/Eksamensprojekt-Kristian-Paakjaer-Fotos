@@ -25,14 +25,15 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 800px;
-    padding: 20px;
+    max-width: 400px;
+    padding: 40px;
     text-align: center;
 }
 
 .spoergsmaal {
     display: block;
-    margin: 10px auto;
+    margin: 15px auto;
+    background-color: var(--baggrundsfarve-tertiaer);
     border: none;
     text-align: left;
     cursor: pointer;
@@ -46,6 +47,12 @@
 .svar {
     max-height: 0;
     overflow: hidden;
-    transition: 0.4s ease-in-out;
+    transition: max-height 0.3s ease-out;
+    text-align: left;
+}
+
+.svar.aaben {
+    max-height: 500px;
+    padding: 10px 0;
 }
 
