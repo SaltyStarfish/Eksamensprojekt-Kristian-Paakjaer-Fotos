@@ -11,7 +11,7 @@ https://www.w3schools.com/css/css3_variables.asp */
   --brand-tekstfarve-lys: #F0F5F8;
   --brandfarve-primaer: #025B6F; 
   --brandfarve-primaer-hover: #2E7B92; 
-  --baggrundsfarve-primaer-click: #01404F; 
+  --brandfarve-primaer-click: #01404F; 
   --sekundaer-brandfarve: #BF7C41;
 }
 
@@ -63,15 +63,15 @@ header{
 
 /*---Burger-animation*/
 /*øverste linje roterer og rykker sig ned mod midten*/
-.vertical-menu #btn_burger span:nth-of-type(1){
+.responsive-topnav.aktiv #btn_burger span:nth-of-type(1){
   transform: translateY(6.6px) rotate(-45deg);
 }
 /*midterste linje bliver så smal at den ikke kan ses*/
-.vertical-menu #btn_burger span:nth-of-type(2){
+.responsive-topnav.aktiv #btn_burger span:nth-of-type(2){
   width: 0px;
 }
 /*nederste linje roterer og rykker sig op mod midten*/
-.vertical-menu #btn_burger span:nth-of-type(3){
+.responsive-topnav.aktiv #btn_burger span:nth-of-type(3){
   transform: translateY(-6px) rotate(45deg);
 }
 /*---Burger-animation slut*/
@@ -80,7 +80,7 @@ header menu{ /*vises som udgangspunkt ikke ved mobil-visning*/
   display: none;
 }
 
-header .vertical-menu ~ menu{ 
+header .responsive-topnav.aktiv ~ menu{ 
   display:block;
 }
 
@@ -91,6 +91,14 @@ header a{
   height: 48px;
   color: inherit;
 }
+
+header li:hover{
+  background-color: var(--brandfarve-primaer-hover);
+}
+
+header a:active{
+  background-color: var(--brandfarve-primaer-click);
+  }
 
 @media screen and (min-width: 1024px){
   header nav{/*indeholder logo og menu med nav-links, som placeres i hver sin side*/
@@ -112,16 +120,12 @@ header a{
     bottom: 0;
     left: 0;
     width: 0%;
-    height: 2px;
+    height: px;
     transition: all 0.3s;
   }
 
   header a:hover .header-link-hover-effekt{
     width: 100%;
-  }
-
-  header a:active{
-    background-color: var(--baggrundsfarve-primaer-click);
   }
 
   .responsive-topnav{/*indeholder kun logo*/
@@ -138,7 +142,7 @@ header a{
     display:flex;
   }
   
-  header .vertical-menu ~ menu{
+  header .responsive-topnav.aktiv ~ menu{
     /*hvis burger-menu er åbnet i mobil-visning og vinduet gøres større igen, vises menuen horisontalt*/
     display:flex;
   }
