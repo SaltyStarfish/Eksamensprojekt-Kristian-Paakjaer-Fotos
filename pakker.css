@@ -15,6 +15,9 @@
   --inner-box-shadow: 0 -1px 3px 0 rgba(0, 0, 0, 0.10) inset;
 }
 
+.section_pakker h3{
+  text-align: center;
+}
 
 .pakker-container{
   display: flex;
@@ -48,21 +51,31 @@
   justify-content: space-between;
   align-items: center;
   background-color: var(--sekundaer-brandfarve);
+  font-family: var(--utopia);
+  font-size: 16px;
   color: var(--baggrundsfarve-primaer);
   border: 0;
   border-radius: 4px;
   padding: 8px 12px;
   border-radius: 0.25rem;
   box-shadow: var(--inner-box-shadow);
+  transition: all 0.3s;
 }
 
-button .kryds{
+.pakke button:hover {
+  background-color: transparent; 
+  color: var(--sekundaer-brandfarve);
+  box-shadow: none;
+  padding-inline-start: 0;
+}
+
+.pakke button .kryds{
   position: relative;
   height: 12px;
   width: 12px;
 }
 
-button .kryds > span{
+.pakke button .kryds > span{
   position: absolute;
   inset: 0;
   margin: auto;
@@ -70,16 +83,32 @@ button .kryds > span{
   width: 12px;
   background-color: var(--baggrundsfarve-primaer);
   border-radius: 1px;
-  /* rotate:45deg; */
   transition: all 0.3s;
 }
 
-button .kryds > span:first-child{
+.pakke button:hover .kryds > span{
+  rotate:45deg; 
+  background-color: var(--sekundaer-brandfarve);
+}
+
+.pakke button .kryds > span:first-child{
   transform: rotate(90deg);
 }
 
+.pakke .prisberegner{
+  overflow: hidden;
+  height: 100%;
+  transition: all 0.3s;
+}
 
-.pris-input{
+.pakke button:hover + .prisberegner {
+  height: 100%; 
+}
+
+.pakke label{
+  font-size: 12px;
+
+}.pris-input{
   display: flex;
   gap: 4px;
 }
