@@ -1,6 +1,5 @@
 .galleri {
     position: relative;
-    max-width: 1200px;
     margin: 20px;
     text-align: center;
 }
@@ -9,15 +8,17 @@
     display: flex;
     overflow-x: scroll;
     scroll-behavior: smooth;
+    background: none;
     gap: 20px;
     padding: 20px 0;
-    justify-content: center;
+    scroll-snap-type: x mandatory;
 }
 
 .galleri-slider img {
     max-height: 400px;
     width: auto;
     object-fit: cover;
+    scroll-snap-align: start;
 }
 
 .pil {
@@ -39,3 +40,13 @@
 .hoejre {
     right: 0;
 }
+
+/* skjul horisontal scrollbar, men bevar srollbarens funktionalitet */
+.galleri-slider::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.galleri-slider {
+    scrollbar-width: none; /* Firefox */
+}
+
