@@ -19,21 +19,22 @@
   <main>
     <section class="section_pakker">
       <h3>Vælg mellem disse pakker</h3>
-      <div class="pakker-container">
+      <div class="container_pakker">
+        <!-- pakke start -->
         <div class="pakke">
-          <h4>Pakke 1</h4>
+          <h4>Bryllupspakke 1</h4>
           <div class="beskrivelse">
             <p>Fotografering og redigering af billeder</p>
             <hr>
             <ul>
               <li>Vielse</li>
               <li>Bryllupsshoot</li>
-              <li>1 times reception</li>
+              <li>1 times reception*</li>
             </ul>
-            <p>Hvis der ikke afholdes reception, er det første time af festen</p>
+            <p>*Hvis der ikke afholdes reception, er det første time af festen</p>
             <p>Pris: <span class="pris">6.000</span>,- <br> + transport a 2,5 kr./km</p>
           </div>
-          <button>Beregn din pris<span class="kryds"><span></span><span></span></span></button>
+          <button><span class="btn_tekst">Beregn din pris</span><span class="kryds"><span></span><span></span></span></button>
           <div class="prisberegner">
 <!-- Label for skal ændres fra pakke til pakke -->
             <label for="bryllup-pakke1-transportaftand">Skriv køreafstand fra Aalborg</label>
@@ -42,11 +43,41 @@
               <input id="bryllup-pakke1-transportaftand" class="afstand" type="number" placeholder="0" min="0"> <p>km</p>
             </div>
             <div class="pris-output">
-              <p>Estimeret pris = </p>
-              <output id="prisberegner-output"></output> 
+              <p>Estimeret pris =</p>
+              <output class="prisberegner-output"></output> 
             </div>
           </div>
         </div>
+        <!-- pakke slut -->
+        <!-- pakke start -->
+        <div class="pakke">
+          <h4>Bryllupspakke 2</h4>
+          <div class="beskrivelse">
+            <p>Fotografering og redigering af billeder</p>
+            <hr>
+            <ul>
+              <li>Vielse</li>
+              <li>Bryllupsshoot</li>
+              <li>1 times reception*</li>
+            </ul>
+            <p>*Hvis der ikke afholdes reception, er det første time af festen</p>
+            <p>Pris: <span class="pris">6.000</span>,- <br> + transport a 2,5 kr./km</p>
+          </div>
+          <button><span class="btn_tekst">Beregn din pris</span><span class="kryds"><span></span><span></span></span></button>
+          <div class="prisberegner">
+<!-- Label for skal ændres fra pakke til pakke -->
+            <label for="bryllup-pakke2-transportaftand">Skriv køreafstand fra Aalborg</label>
+            <div class="pris-input">
+<!-- Input id skal ændres fra pakke til pakke -->
+              <input id="bryllup-pakke2-transportaftand" class="afstand" type="number" placeholder="0" min="0"> <p>km</p>
+            </div>
+            <div class="pris-output">
+              <p>Estimeret pris =</p>
+              <output class="prisberegner-output"></output> 
+            </div>
+          </div>
+        </div>
+        <!-- pakke slut -->
       </div>
     </section>
   </main>
