@@ -59,22 +59,6 @@
     scrollbar-width: none; /* Firefox */
 }
 
-/* responsiv */
-
-/* tablet med 2 billeder per række */
-@media (max-width: 1000px) {
-    .galleri-slider img {
-        width: 50%; /* = 2 billeder vises ad gangen */
-    }
-}
-
-/* mobil med 1 billede ad gangen */
-@media (max-width: 600px) {
-    .galleri-slider img {
-        width: 100%;
-    }
-}
-
 #lightbox {
     position: fixed;
     z-index: 1000;
@@ -89,4 +73,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+}
+
+/* responsiv */
+
+/* tablet med 2 billeder per række */
+@media (max-width: 1000px) {
+    .galleri-slider img {
+        width: 50%; /* = 2 billeder vises ad gangen */
+    }
+}
+
+/* mobil med 1 billede ad gangen */
+@media (max-width: 600px) {
+    .galleri-slider img {
+        width: 100%;
+    }
 }
