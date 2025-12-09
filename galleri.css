@@ -1,25 +1,41 @@
-.galleri-sektion {
-    max-width: 1000px;
+.galleri {
     position: relative;
-    margin: 20px auto;
-    align-items: center;
+    max-width: 1200px;
+    margin: 20px;
+    text-align: center;
 }
 
 .galleri-slider {
-    position: relative;
-    overflow: hidden;
-}
-
-.galleri-billeder {
     display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
     gap: 20px;
+    padding: 20px 0;
+    justify-content: center;
 }
 
-.galleri-billeder img {
-    width: 100%;
+.galleri-slider img {
+    max-height: 400px;
+    width: auto;
     object-fit: cover;
 }
 
-.slider-knap {
+.pil {
     position: absolute;
+    cursor: pointer;
+    top: 50%;
+    padding: 10px;
+    font-size: 40px;
+    color: var(--tekstfarve-primaer);
+    background: transparent;
+    border: none;
+    transform: translateY(-50%);
+}
+
+.venstre {
+    left: 0;
+}
+
+.hoejre {
+    right: 0;
 }
