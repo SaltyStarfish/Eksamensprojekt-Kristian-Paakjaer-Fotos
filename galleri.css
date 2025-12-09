@@ -15,7 +15,7 @@
 
 .galleri-slider img {
     width: 33.33%; /* 3 billeder vises ad gangen på desktop */
-    height: 300px;
+    height: 400px;
     object-fit: cover;
     scroll-snap-align: start;
     flex: 0 0 auto; /* bruges til responsiv snap, så billedet ikke formindskes */
@@ -26,18 +26,28 @@
     position: absolute;
     cursor: pointer;
     top: 50%;
-    font-size: 40px;
-    color: var(--tekstfarve-primaer);
+    font-size: 30px;
+    color: white;
     border: none;
+    padding: 10px;
+    background: rgba(58, 58, 58, 0.5);
     transform: translateY(-50%);
+    transition: transform 0.2s opacity 0.2s;
+    z-index: 10;
+    backdrop-filter: blur (5px);
+    mix-blend-mode: difference;
+}
+
+.pil:hover {
+    transform: translateY(-50%) scale(1.2);
 }
 
 .venstre {
-    left: 0;
+    left: 10px;
 }
 
 .hoejre {
-    right: 0;
+    right: 10px;
 }
 
 /* skjul horisontal scrollbar, men bevar srollbarens funktionalitet */
