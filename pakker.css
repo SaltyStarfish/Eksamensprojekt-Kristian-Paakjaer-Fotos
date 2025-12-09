@@ -62,7 +62,7 @@
   transition: all 0.3s;
 }
 
-.pakke button:hover {
+.pakke button.aktiv {
   background-color: transparent; 
   color: var(--sekundaer-brandfarve);
   box-shadow: none;
@@ -86,7 +86,7 @@
   transition: all 0.3s;
 }
 
-.pakke button:hover .kryds > span{
+.pakke button.aktiv .kryds > span{
   rotate:45deg; 
   background-color: var(--sekundaer-brandfarve);
 }
@@ -97,11 +97,11 @@
 
 .pakke .prisberegner{
   overflow: hidden;
-  height: 100%;
+  height: 0;
   transition: all 0.3s;
 }
 
-.pakke button:hover + .prisberegner {
+.pakke button.aktiv + .prisberegner {
   height: 100%; 
 }
 
