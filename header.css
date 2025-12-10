@@ -1,20 +1,3 @@
-/* Definér variable:
-https://www.w3schools.com/css/css3_variables.asp */
-
-:root {
-  /*Farver*/
-  --baggrundsfarve-primaer: #FDFCFC; 
-  --baggrundsfarve-sekundaer: #FBF9F7; 
-  --baggrundsfarve-tertiaer: #F4F0EA; 
-  --tekstfarve-faded: #AEACAB; 
-  --tekstfarve-primaer: #272626; 
-  --brand-tekstfarve-lys: #F0F5F8;
-  --brandfarve-primaer: #025B6F; 
-  --brandfarve-primaer-hover: #2E7B92; 
-  --brandfarve-primaer-click: #01404F; 
-  --sekundaer-brandfarve: #BF7C41;
-}
-
 /*Reset CSS*/
 header *{
   list-style: none;
@@ -31,7 +14,7 @@ header{
   box-shadow: var(--inner-box-shadow);
 }
 
-.responsive-topnav{ /*indeholder logo og burger*/
+header .responsive-topnav{ /*indeholder logo og burger*/
   display: flex;
   justify-content: space-between; /*placerer dem i hver sin side af headeren*/
   padding-inline: 16px 4px;
@@ -39,7 +22,7 @@ header{
   text-transform: uppercase;
 }
 
-#btn_burger{ /*indeholder animeret burger*/
+header #btn_burger{ /*indeholder animeret burger*/
   display:flex;
   flex-direction: column;
   align-items: center;
@@ -53,7 +36,7 @@ header{
   border: 0;
 }
 
-#btn_burger span{ /*hver streg i den animerede burger*/
+header #btn_burger span{ /*hver streg i den animerede burger*/
   width:75%;
   height: 2px;
   background-color: var(--brand-tekstfarve-lys);
@@ -63,15 +46,15 @@ header{
 
 /*---Burger-animation*/
 /*øverste linje roterer og rykker sig ned mod midten*/
-.responsive-topnav.aktiv #btn_burger span:nth-of-type(1){
+header .responsive-topnav.aktiv #btn_burger span:nth-of-type(1){
   transform: translateY(6.6px) rotate(-45deg);
 }
 /*midterste linje bliver så smal at den ikke kan ses*/
-.responsive-topnav.aktiv #btn_burger span:nth-of-type(2){
+header .responsive-topnav.aktiv #btn_burger span:nth-of-type(2){
   width: 0px;
 }
 /*nederste linje roterer og rykker sig op mod midten*/
-.responsive-topnav.aktiv #btn_burger span:nth-of-type(3){
+header .responsive-topnav.aktiv #btn_burger span:nth-of-type(3){
   transform: translateY(-6px) rotate(45deg);
 }
 /*---Burger-animation slut*/
@@ -133,13 +116,13 @@ header a:active{
     width: 100%;
   }
 
-  .responsive-topnav{/*indeholder kun logo*/
+  header .responsive-topnav{/*indeholder kun logo*/
     font-size: 24px;
     padding: 0;
   }
 
 /*fjerner burgeren og "forside"-punktet*/
-  #btn_burger, header menu li:first-of-type{
+  header #btn_burger, header menu li:first-of-type{
     display: none;
   }
 

@@ -1,5 +1,5 @@
-const burger = document.querySelector("#btn_burger");
-let responsive_topnav = document.querySelector(".responsive-topnav");
+const burger = document.querySelector("header #btn_burger");
+let responsive_topnav = document.querySelector("header .responsive-topnav");
 
 burger.onclick = toggleBurgerMenu; 
 
