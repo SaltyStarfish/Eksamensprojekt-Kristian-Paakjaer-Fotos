@@ -1,0 +1,147 @@
+/*centrerer overskrift og tilføjer whitespace over og under*/
+.section_pakker h3{
+  text-align: center;
+  margin-block: 48px 24px;
+}
+
+/*container til pakkerne, som placerer dem ved siden af hinanden, når der er plads nok*/
+.container_pakker{
+  display: flex;
+  justify-content: center;
+  gap: 12px 24px;
+  flex-wrap: wrap;
+}
+
+/*styling af hver pakke med grid-opbygning*/
+.pakke{
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  /*pynte-kant i accentfarve*/
+  border-left: 6px solid var(--sekundaer-brandfarve);
+  background-color: var(--baggrundsfarve-sekundaer);
+  box-shadow: var(--modern-box-shadow);
+  color: var(--tekstfarve-primaer);
+  border-radius: 8px;
+  width: 264px;
+  height: fit-content; /*så pakken kun er så høj som dens indhold - også når andre pakker udvides*/
+  padding: 22px 18px;
+  /* gap: 24px; - giver underligt whitespace i bunden. Find anden løsning*/
+  transition: all 0.3s;
+}
+
+.pakke p, .pakke ul{
+  font-family: var(--utopia);
+}
+
+/*inryk foran listen*/
+.pakke ul{
+  padding-inline-start: 24px;
+}
+
+.pakke h4{
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.pakke .beskrivelse{
+  display: grid;
+  margin-bottom: 16px;
+  gap: 12px;
+}
+
+/*pris med fed*/
+.pakke span.pris{
+  font-weight: bold;
+}
+
+.pakke button{
+/*placerer tekst og kryds i hver sin ende*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /*nødvendigt for at centrere krydset lodret*/
+  padding: 8px 12px;
+/*farver*/
+  background-color: var(--sekundaer-brandfarve);
+  color: var(--baggrundsfarve-primaer);
+  box-shadow: var(--inner-box-shadow);
+/*font*/
+  font-family: var(--utopia);
+  font-size: 16px;
+/*reset knap-styling*/
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+/*border-radius og transition*/
+  border-radius: 0.25rem;
+  transition: all 0.3s;
+}
+
+/*ændr styling, når der er klikket på knappen*/
+.pakke button.aktiv {
+  background-color: transparent; 
+  color: var(--sekundaer-brandfarve);
+  box-shadow: none;
+  padding-inline-start: 0;
+}
+
+/*kryds, besående af to streger (spans)*/
+.pakke button .kryds{
+  position: relative; /*for at kunne bruge absolute på child-elementer*/
+  height: 12px;
+  width: 12px;
+}
+
+/*de to streger i krydset*/
+.pakke button .kryds > span{
+  position: absolute; /*for at kunne placere dem oven på hinanden*/
+/*margin:auto sammen med inset:0 centrerer krydset i containeren*/
+  inset: 0;
+  margin: auto; 
+/*størrelse på stregerne*/
+  height: 2px;
+  width: 12px;
+  background-color: var(--baggrundsfarve-primaer);
+  border-radius: 1px;
+  transition: all 0.3s;
+}
+
+/*den nederste streg roteres 90 grader for at lave et plus*/
+.pakke button .kryds > span:first-child{
+  transform: rotate(90deg);
+}
+
+/*stregerne roteres og skifter farve, når der er klikket på knappen*/
+.pakke button.aktiv .kryds > span{
+  rotate:45deg; 
+  background-color: var(--sekundaer-brandfarve);
+}
+
+/*nederste row i grid (prisberegner) - skjult som standard pga height: 0*/
+.pakke .prisberegner{
+  overflow: hidden;
+  height: 0;
+  transition: all 0.3s;
+}
+
+.pakke button.aktiv + .prisberegner {
+  height: 100%; 
+}
+
+.pakke label{
+  font-size: 12px;
+
+}.pris-input{
+  display: flex;
+  gap: 4px;
+}
+
+.pris-input > *{
+  padding: 4px 4px;
+}
+
+.pris-output{
+  display: flex;
+  padding: 8px 12px;
+  white-space: pre;
+  border-bottom: 1px solid var(--sekundaer-brandfarve)
+}
