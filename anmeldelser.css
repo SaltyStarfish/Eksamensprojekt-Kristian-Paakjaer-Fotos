@@ -8,7 +8,7 @@
     overflow-x: scroll;
     scroll-behavior: smooth;
     gap: 20px;
-    padding: 20px 0;
+    padding: 20px 40;
     scroll-snap-type: x mandatory;
 }
 
@@ -17,7 +17,7 @@
     scroll-snap-align: start;
     flex: 0 0 auto; /* bruges til responsiv snap, så anmeldelsen ikke formindskes */
     background-color: var(--baggrundsfarve-tertiaer);
-    padding: 20px;
+    padding: 10px 30px;
     border-radius: 10px;
     box-shadow: var(--modern-box-shadow);
     text-align: left;
@@ -46,7 +46,52 @@
 
 .anmeldelse-card cite {
     display: block;
-    text-align: right;
+    text-align: center;
     font-style: normal;
     font-weight: bold;
+}
+
+.anmeldelser-pil {
+    position: absolute;
+    cursor: pointer;
+    top: 90%;
+    font-size: 30px;
+    color: var(--tekstfarve-primaer);
+    border: none;
+    padding: 8px;
+    background: none;
+    transform: translateY(-50%);
+    transition: transform 0.2s opacity 0.2s;
+    z-index: 10;
+}
+
+.anmeldelser-pil:hover {
+    transform: translateY(-50%) scale(1.2);
+}
+
+.venstre {
+    left: 10;
+}
+
+.hoejre {
+    right: 10px;
+}
+
+/* Responsivt design */
+@media (max-width: 1200px) {
+    .anmeldelser-slider .anmeldelse-card {
+        width: 30%; /* 3 anmeldelser vises ad gangen */
+    }
+}
+
+@media (max-width: 850px) {
+    .anmeldelser-slider .anmeldelse-card {
+        width: 50%; /* 2 anmeldelser vises ad gangen */
+    }
+}
+
+@media (max-width: 600px) {
+    .anmeldelser-slider .anmeldelse-card {
+        width: 100%; /* 1 anmeldelse vises ad gangen */
+    }
 }
