@@ -12,7 +12,7 @@
     scroll-snap-type: x mandatory;
 }
 
-.anmeldelser-slider .anmeldelse {
+.anmeldelser-slider .anmeldelse-card {
     width: 20%; /* 5 anmeldelser vises ad gangen på desktop */
     scroll-snap-align: start;
     flex: 0 0 auto; /* bruges til responsiv snap, så anmeldelsen ikke formindskes */
@@ -20,4 +20,33 @@
     padding: 20px;
     border-radius: 10px;
     box-shadow: var(--modern-box-shadow);
+    text-align: left;
+}
+
+/* skjul horisontal scrollbar, men bevar srollbarens funktionalitet */
+.anmeldelser-slider::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.anmeldelser-slider {
+    scrollbar-width: none;  /* Firefox */
+}
+
+.stjerner {
+    color: var(--sekundaer-brandfarve);
+    margin-bottom: 15px;
+    font-size: x-large;
+    text-align: center;
+}
+
+.anmeldelse-card blockquote {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.anmeldelse-card cite {
+    display: block;
+    text-align: right;
+    font-style: normal;
+    font-weight: bold;
 }
