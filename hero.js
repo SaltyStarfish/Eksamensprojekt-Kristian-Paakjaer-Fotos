@@ -30,25 +30,28 @@ function skiftBilledeOgKomIgen(){
   }
 };*/
 
-let i = 0;
+let i = -1; //for at den viser slide 1 først
 const slides = document.querySelectorAll(".div_hero-content");
 
+// start slideshow-funktionen
+showSlides();
+
+//definér slideshow-funktionen:
 function showSlides() {
   // skjul alle slides
-  slides.forEach(slide => slide.style.display = "none");
+  slides.forEach(slide => slide.style = "display: none");
 
   // "forøg slide index" - aka: bliver til næste slide
   i = (i + 1) % slides.length;
   //"%" kaldes en "modulo-operator" og er en matematisk operator, som finder "divitions-resten" . Det virker lidt random, men fungerer enormt godt her! Når (i+1) er mindre en længden af arrayet giver divisionen ikke et helt tal, og derfor vil der være en divitionsrest på det samme tal, som (i+1). Men hvis (i+1) giver præcis længden på arrayet, går divisionen op, og der er derfor en divisionsrest på 0, så i = 0, og vi hopper tilbage til start! Genialt!
 
   // vis det nuværende slide
-  slides[i].style.display = "flex";
+  slides[i].style = "display: flex";
 
-  // skift til næste slide hver 3. sekund
-  setTimeout(showSlides, 3000);
+  // skift til næste slide hver 4. sekund
+  setTimeout(showSlides, 4000);
 }
 
-// start slideshow
-showSlides();
 
-//men hvorfor kører den automatisk i loop?
+
+//men hvorfor kører den automatisk i loop? Pga module-operatoren!
