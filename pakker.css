@@ -5,7 +5,7 @@
 }
 
 /*container til pakkerne, som placerer dem ved siden af hinanden, når der er plads nok*/
-.container_pakker{
+.section_pakker .container_pakker{
   display: flex;
   justify-content: center;
   gap: 12px 24px;
@@ -13,7 +13,7 @@
 }
 
 /*styling af hver pakke med grid-opbygning*/
-.pakke{
+.section_pakker .pakke{
   display: grid;
   grid-template-rows: auto auto auto auto;
   /*pynte-kant i accentfarve*/
@@ -29,32 +29,32 @@
   transition: all 0.3s;
 }
 
-.pakke p, .pakke ul{
+.section_pakker .pakke p, .pakke ul{
   font-family: var(--utopia);
 }
 
 /*inryk foran listen*/
-.pakke ul{
+.section_pakker .pakke ul{
   padding-inline-start: 24px;
 }
 
-.pakke h4{
+.section_pakker .pakke h4{
   line-height: 1;
   margin-bottom: 12px;
 }
 
-.pakke .beskrivelse{
+.section_pakker .pakke .beskrivelse{
   display: grid;
   margin-bottom: 16px;
   gap: 12px;
 }
 
 /*pris med fed*/
-.pakke span.pris{
+.section_pakker .pakke span.pris{
   font-weight: bold;
 }
 
-.pakke button{
+.section_pakker .pakke button{
 /*placerer tekst og kryds i hver sin ende*/
   display: flex;
   justify-content: space-between;
@@ -77,7 +77,7 @@
 }
 
 /*ændr styling, når der er klikket på knappen*/
-.pakke button.aktiv {
+.section_pakker .pakke button.aktiv {
   background-color: transparent; 
   color: var(--sekundaer-brandfarve);
   box-shadow: none;
@@ -85,14 +85,14 @@
 }
 
 /*kryds, besående af to streger (spans)*/
-.pakke button .kryds{
+.section_pakker .pakke button .kryds{
   position: relative; /*for at kunne bruge absolute på child-elementer*/
   height: 12px;
   width: 12px;
 }
 
 /*de to streger i krydset*/
-.pakke button .kryds > span{
+.section_pakker .pakke button .kryds > span{
   position: absolute; /*for at kunne placere dem oven på hinanden*/
 /*margin:auto sammen med inset:0 centrerer krydset i containeren*/
   inset: 0;
@@ -106,40 +106,41 @@
 }
 
 /*den nederste streg roteres 90 grader for at lave et plus*/
-.pakke button .kryds > span:first-child{
+.section_pakker .pakke button .kryds > span:first-child{
   transform: rotate(90deg);
 }
 
 /*stregerne roteres og skifter farve, når der er klikket på knappen*/
-.pakke button.aktiv .kryds > span{
+.section_pakker .pakke button.aktiv .kryds > span{
   rotate:45deg; 
   background-color: var(--sekundaer-brandfarve);
 }
 
 /*nederste row i grid (prisberegner) - skjult som standard pga height: 0*/
-.pakke .prisberegner{
+.section_pakker .pakke .prisberegner{
   overflow: hidden;
   height: 0;
   transition: all 0.3s;
 }
 
-.pakke button.aktiv + .prisberegner {
+.section_pakker .pakke button.aktiv + .prisberegner {
   height: 100%; 
 }
 
-.pakke label{
+.section_pakker .pakke label{
   font-size: 12px;
+}
 
-}.pris-input{
+.section_pakker .pris-input{
   display: flex;
   gap: 4px;
 }
 
-.pris-input > *{
+.section_pakker .pris-input > *{
   padding: 4px 4px;
 }
 
-.pris-output{
+.section_pakker .pris-output{
   display: flex;
   padding: 8px 12px;
   white-space: pre;

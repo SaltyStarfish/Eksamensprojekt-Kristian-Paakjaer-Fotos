@@ -70,7 +70,7 @@ let input_afstand = document.getElementById("bryllup-pakke1-transportaftand");
 let output_pris = document.querySelector(".prisberegner-output");
 
 // Lytter efter hvornår afstanden i inputfeltet ændrer sig
-input_afstand.onchange = beregn;
+input_afstand.oninput = beregn;
 
 function beregn(){
 // Beregner prisen (skal stå inde i funktionen, for at den beregner ved hvert input - ellers virker det ikke)
