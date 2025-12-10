@@ -22,7 +22,12 @@
     cursor: pointer; /* pointer ved hover over billede for at vise, det er klikbart */
 }
 
-.pil {
+.galleri-slider img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+.galleri-pil {
     position: absolute;
     cursor: pointer;
     top: 50%;
@@ -38,7 +43,7 @@
     mix-blend-mode: difference;
 }
 
-.pil:hover {
+.galleri-pil:hover {
     transform: translateY(-50%) scale(1.2);
 }
 
