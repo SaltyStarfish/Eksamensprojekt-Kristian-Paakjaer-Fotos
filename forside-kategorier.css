@@ -32,7 +32,7 @@
   color: inherit;
 }
 
-ul.forside-kategorier{
+.section_kategorier ul{
   max-width: 450px;
   margin-inline: auto;
   display: grid;
@@ -42,7 +42,7 @@ ul.forside-kategorier{
   padding: 12px;
 }
 
-.forside-kategorier li{
+.section_kategorier li{
   border-radius: 4px;
   overflow: hidden;
   background-position: center;
@@ -50,32 +50,32 @@ ul.forside-kategorier{
   background-repeat: no-repeat;
 }
 
-.forside-kategorier .kategori-bryllup{
+.section_kategorier .kategori-bryllup{
   background-image: url(https://www-static.kristianpaakjaer.dk/wp-content/uploads/2025/02/fokuskasse-01.jpg);
   background-position: center 25%; /* Juster baggrundsbilledets position - procent afgør hvor billedets "midte" skal være */
 
 }
 
-.forside-kategorier .kategori-baby{
+.section_kategorier .kategori-baby{
   background-image: url(https://www-static.kristianpaakjaer.dk/wp-content/uploads/2025/09/KristianPaakjaer-19666-scaled.jpg);
   background-position: center 45%;
 }
 
-.forside-kategorier .kategori-familie{
+.section_kategorier .kategori-familie{
   background-image: url(https://www-static.kristianpaakjaer.dk/wp-content/uploads/2025/02/fokuskasse-04.jpg);
   background-position: center 15%;
 }
 
-.forside-kategorier .kategori-event{
+.section_kategorier .kategori-event{
   background-image: url(https://www-static.kristianpaakjaer.dk/wp-content/uploads/2025/02/fokuskasse-02.jpg);
   background-position: center 45%;
 }
 
-.forside-kategorier .kategori-erhverv{
+.section_kategorier .kategori-erhverv{
   background-image: url(https://www-static.kristianpaakjaer.dk/wp-content/uploads/2025/02/fokuskasse-03.jpg);
 }
 
-.forside-kategorier li a{
+.section_kategorier a{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -88,27 +88,30 @@ ul.forside-kategorier{
   transition: all 0.5s ease;
 }
 
-.forside-kategorier li a:hover{
+.section_kategorier a:hover{
   transform: scale(1.1);
   background-color: rgba(0,0,0,0.7);
 }
 
-.forside-kategorier li a:active{
+.section_kategorier li a:active{
   background-color: rgba(0,0,0,0.5);
 }
 
 @media screen and (min-width: 534px){
-  ul.forside-kategorier{
+  .section_kategorier ul{
     max-width: 1024px;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 40vh 30vh;
   }
 
-  .kategori-bryllup, .kategori-baby, .kategori-familie{
+  .section_kategorier .kategori-bryllup, 
+  .section_kategorier .kategori-baby, 
+  .section_kategorier .kategori-familie{
     grid-column: span 2;
   }
   
-  .kategori-event, .kategori-erhverv{
+  .section_kategorier .kategori-event, 
+  .section_kategorier .kategori-erhverv{
     grid-column: span 3;
   }
 }

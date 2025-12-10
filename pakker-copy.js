@@ -1,51 +1,45 @@
 
+  const btns_beregn = document.querySelectorAll(".pakke .btn_beregn");
 
-/*
-// --- Åbne-/lukke-funktion ---
-document.querySelectorAll(".pakke button").forEach(function (btn_beregn) {
-  btn_beregn.onclick = function () {
-    // `this` is the clicked button
+  for (const btn_beregn of btns_beregn) {
+    btn_beregn.onclick = visPrisberegner;
+  }
+
+  function visPrisberegner() {
+
+    // Find den nærmeste .pakke (container)
     const pakke = this.closest(".pakke");
+
+    // Find tekst-span inde i knappen
     const btn_beregn_tekst = this.querySelector("span.btn_tekst");
-    const prisberegnerPanel = this.nextElementSibling; // assumes panel is next sibling
 
-    // Toggle classes
+    // Toggler klassen 'aktiv' på knappen (styling/rotation)
     this.classList.toggle("aktiv");
-    prisberegnerPanel.classList.toggle("aktiv");
 
-    // Change button text
+  //toggler klassen aktiv, som åbner og lukker prisberegneren
+    this.nextElementSibling.classList.toggle("aktiv");
+
+    // Ændrer knaptekst
     if (btn_beregn_tekst.innerText === "Beregn din pris") {
       btn_beregn_tekst.innerText = "Luk prisberegner";
     } else {
       btn_beregn_tekst.innerText = "Beregn din pris";
     }
-  };
-});
+  }
 
-// --- Beregner ---
-document.querySelectorAll(".pakke .transportafstand").forEach(function (input_afstand) {
-  input_afstand.oninput = function () {
-    // `this` is the input field
-    const pakke = this.closest(".pakke");
-    const output_pris = pakke.querySelector(".prisberegner-output");
 
-    // Optional: read config from data attributes
-    const base = Number(pakke.dataset.base ?? 6000);
-    const rate = Number(pakke.dataset.rate ?? 2.5);
-
-    // Calculate price
-    const afstand = this.valueAsNumber || 0;
-    const pris = afstand * rate + base;
-
-    // Update output
-    output_pris.innerText = " " + pris.toLocaleString("da-DK") + " kr.";
-  };
-});
-*/
-
-//---åbne-/ lukke-funktion---
-const btn_beregn = document.querySelector(".pakke button");
+//----------------------
+/*const btns_beregn = document.querySelectorAll(".pakke .btn_beregn");
+const pakke = btn_beregn.closest(".pakke");
 const btn_beregn_tekst = btn_beregn.querySelector("span.btn_tekst");
+
+for (const btn_beregn of btns_beregn) {
+  btn_beregn.onclick = visPrisberegner;
+}
+
+/* //---åbne-/ lukke-funktion---
+const btn_beregn = document.querySelector(".pakke button");
+
 
 btn_beregn.onclick = visPrisberegner
 
@@ -70,14 +64,14 @@ let input_afstand = document.getElementById("bryllup-pakke1-transportaftand");
 let output_pris = document.querySelector(".prisberegner-output");
 
 // Lytter efter hvornår afstanden i inputfeltet ændrer sig
-input_afstand.oninput = beregn;
+input_afstand.onchange = beregn;
 
 function beregn(){
 // Beregner prisen (skal stå inde i funktionen, for at den beregner ved hvert input - ellers virker det ikke)
   let pris = (input_afstand.valueAsNumber || 0) * 2.5 + 6000;
 //Bestemmer hvad der skal stå i outputfeltet
  output_pris.innerText = " " + pris + " kr.";
-}
+}*/
 
 
 /* Arrays??
