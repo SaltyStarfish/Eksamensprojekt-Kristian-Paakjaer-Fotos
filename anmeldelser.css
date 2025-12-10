@@ -1,0 +1,23 @@
+.anmeldelser {
+    position: relative;
+    margin: 20px;
+}
+
+.anmeldelser-slider {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding: 20px 0;
+    scroll-snap-type: x mandatory;
+}
+
+.anmeldelser-slider .anmeldelse {
+    width: 20%; /* 5 anmeldelser vises ad gangen på desktop */
+    scroll-snap-align: start;
+    flex: 0 0 auto; /* bruges til responsiv snap, så anmeldelsen ikke formindskes */
+    background-color: var(--baggrundsfarve-tertiaer);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: var(--modern-box-shadow);
+}
