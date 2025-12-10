@@ -80,6 +80,23 @@
     max-height: 80%;
 }
 
+
+#luk-lightbox {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+#luk-lightbox:hover {
+    transform: scale(1.2);
+    opacity: 0.9;
+}
+
+
 /* responsiv */
 
 /* tablet med 2 billeder per række */
