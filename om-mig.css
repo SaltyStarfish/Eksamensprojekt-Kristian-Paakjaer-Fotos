@@ -1,0 +1,34 @@
+.hero-statisk {
+    position: relative; /* for at kunne placere h1 og overlay ovenpå billedet */
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.hero-statisk img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.div_hero-overlay{
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-statisk h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 10;
+}
