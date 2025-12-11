@@ -39,20 +39,20 @@
         </div>
       </div>
 <!-- https://www.w3schools.com/tags/tag_form.asps -->
-      <form action="#">
+      <form id="kontakt-formular" action="#">
         <fieldset>
           <legend>Kontakt-formular:</legend>
-          <label for="form-input_name">Navn: <span class="stjerne">*</span></label><br>
-          <input type="text" id="form-input_name" name="Navn" required placeholder="Jens Jensen"><br><br>
+          <label for="form-input_navn">Navn: <span class="stjerne">*</span></label><br>
+          <input type="text" id="form-input_navn" name="Navn" required placeholder="Jens Jensen"><br><br>
           <label for="form-input_email">Email: <span class="stjerne">*</span></label><br>
           <input type="email" id="form-input_email" name="email" required placeholder="jensjensen@eksempel.dk"><br><br>
           <label for="form-input_telefon">Telefon:</label><br>
-          <input type="tel" id="form-telefon" name="Telefon" placeholder="12 23 34 45"><br><br>
+          <input type="tel" id="form-input_telefon" name="Telefon" placeholder="12 23 34 45"><br><br>
           <label for="form-input_besked">Din besked: <span class="stjerne">*</span></label><br>
           <textarea id="form-input_besked" name="Din besked" rows="8" cols="40" required placeholder="Hej Kristian. 
 Kan du hjælpe mig med en opgave...?"></textarea>
           <p><span class="stjerne">*</span>oblikatorisk felt</p><br>
-          <button class="link_cta" type="submit" value="Send">
+          <button id="btn_validator" type="button" class="link_cta" popovertarget="div_bekraeft-besked">
             Send besked
             <span></span>
             <span></span>
@@ -60,9 +60,25 @@ Kan du hjælpe mig med en opgave...?"></textarea>
             <span></span>
           </button>
         </fieldset>
+          <div popover="auto" id="div_bekraeft-besked">
+            <p>Du er ved at sende denne besked:</p><br><br>
+            <p>Navn: <span id="review-navn"></span></p><br>
+            <p>Email: <span id="review-email"></span></p><br>
+            <p>Telefon: <span id="review-telefon"></span></p><br>
+            <p>Besked: <br><span id="review-besked"></span></p><br><br>
+            <p>Ser det rigtigt ud?</p>
+            <div class="div_action-buttons">
+              <button type="button" popovertarget="div_bekraeft-besked" popovertargetaction="hide">Nej, gå tilbage</button>
+              <button class="link_cta" type="submit" name="Send">Ja, send besked
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+          </div>
       </form>
     </div>
-
   </section>
 </body>
 </html>
