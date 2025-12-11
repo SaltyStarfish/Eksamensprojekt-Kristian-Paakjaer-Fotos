@@ -85,6 +85,17 @@
     right: 10px;
 }
 
+.se-flere-anmeldelser {
+    margin-top: 10px;
+    color: var(--tekstfarve-primaer);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.se-flere-anmeldelser:hover {
+    transform: scale(1.1);
+}
+
 /* Responsivt design */
 @media (max-width: 1200px) {
     .anmeldelser-slider .anmeldelse-card {
