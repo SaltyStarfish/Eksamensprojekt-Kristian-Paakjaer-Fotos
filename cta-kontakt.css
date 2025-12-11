@@ -30,12 +30,10 @@
 }
 
 .link_cta:active{ 
-/*Farver*/
   background-color: var(--brandfarve-primaer-click);
 }
 
-.link_cta:hover{ 
-/*Farver*/
+.link_cta:hover{ /*gør hover-linjerne synlige på lys baggrund*/
   border: 0.1px solid var(--brandfarve-primaer-click);
 }
 
@@ -62,7 +60,9 @@
   width: 0%;
   height: 2px;
 }
-.link_cta:hover span:nth-child(-n +2){
+/*vælger de to vandrette streger*/
+.link_cta:hover span:nth-child(-n +2),
+.link_cta:focus span:nth-child(-n +2){
   opacity: 1;
   width: 100%;
 }
@@ -81,7 +81,9 @@
   height: 0%;
   width: 2px;
 }
-.link_cta:hover span:nth-child(n+3){
+/* vælger de to lodrette streger*/
+.link_cta:hover span:nth-child(n+3),
+.link_cta:focus span:nth-child(n+3){
   opacity: 1;
   height: 100%;
 }

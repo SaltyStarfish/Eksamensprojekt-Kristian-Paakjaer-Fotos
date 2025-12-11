@@ -11,14 +11,21 @@
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 9;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+
 .section_hero h1{
   text-align: center;
   color: var(--brand-tekstfarve-lys);
   line-height: 1;
   font-weight: 400;
+}
+
+.section_hero .link_cta{
+  position: absolute;
+  bottom: 10%;
 }
 
 .section_hero .div_hero-content{

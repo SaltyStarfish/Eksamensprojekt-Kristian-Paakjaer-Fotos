@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.typekit.net/skt8aqv.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="cta-kontakt.css">
+  <link rel="stylesheet" href="kontakt-formular.css">
+  <script src="kontakt-formular.js" defer></script>
+  <title>Kontakt formular | Kristian Paakjaer Fotos</title>
+</head>
+<body>
+  <section class="section_kontakt">
+    <div class="flexbox_kontakt">
+      <div class="container_kontakt-info">
+        <address>
+          <div class="flexbox_mail">
+            <img src="images/vaerdier-placeholder.svg" alt="Mail - Piktogram af en konvolut">
+            <a href="mailto:kontakt@kristianpaakjaer.dk">kontakt@kristianpaakjaer.dk</a>
+          </div>
+          <div class="flexbox_telefon">
+            <img src="images/vaerdier-placeholder.svg" alt="Telefonnummer - Piktogram af en gammeldags telefon">
+            <a href="tel:+4523925988">23 92 59 88</a>
+          </div>
+          <div class="flexbox_adresse">
+            <img src="images/vaerdier-placeholder.svg" alt="Adresse - Piktogram af en lokationsmarkør">
+            <a href="https://maps.app.goo.gl/GaQQjGCqGgZubrdNA">Beatesmindevej 70, 9210 Aalborg SØ</a>
+          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2171.947992579582!2d9.932695!3d57.018196499999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464a5b50257cd627%3A0x114cdd4d18ec9f86!2sKristian%20Paakj%C3%A6r%20Fotos!5e0!3m2!1sda!2sdk!4v1765438439419!5m2!1sda!2sdk" width="320" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </address>
+        <div class="div_some">
+          <a href="https://www.facebook.com/KristianPaakjaerFotos/?locale=da_DK" target="_blank">
+            <img src="images/vaerdier-placeholder.svg" alt="Facebook-logo">
+          </a>
+          <a href="https://www.instagram.com/kristian_paakjaer_fotos/" target="_blank">
+            <img src="images/vaerdier-placeholder.svg" alt="Instagram-logo">
+          </a>
+        </div>
+      </div>
+<!-- https://www.w3schools.com/tags/tag_form.asps -->
+      <form action="#">
+        <fieldset>
+          <legend>Kontakt-formular:</legend>
+          <label for="form-input_name">Navn: <span class="stjerne">*</span></label><br>
+          <input type="text" id="form-input_name" name="Navn" required placeholder="Jens Jensen"><br><br>
+          <label for="form-input_email">Email: <span class="stjerne">*</span></label><br>
+          <input type="email" id="form-input_email" name="email" required placeholder="jensjensen@eksempel.dk"><br><br>
+          <label for="form-input_telefon">Telefon:</label><br>
+          <input type="tel" id="form-telefon" name="Telefon" placeholder="12 23 34 45"><br><br>
+          <label for="form-input_besked">Din besked: <span class="stjerne">*</span></label><br>
+          <textarea id="form-input_besked" name="Din besked" rows="8" cols="40" required placeholder="Hej Kristian. 
+Kan du hjælpe mig med en opgave...?"></textarea>
+          <p><span class="stjerne">*</span>oblikatorisk felt</p><br>
+          <button class="link_cta" type="submit" value="Send">
+            Send besked
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </fieldset>
+      </form>
+    </div>
+
+  </section>
+</body>
+</html>
