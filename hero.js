@@ -30,6 +30,9 @@ function skiftBilledeOgKomIgen(){
   }
 };*/
 
+
+/*måske findes en bedre løsning med arrays, og ændring af innerHTML via for-loops*/
+
 let i = -1; //for at den viser slide 1 først
 const slides = document.querySelectorAll(".div_hero-content");
 

@@ -6,6 +6,8 @@ header *{
 
 header{
   position: sticky; /*bliver siddende i toppen*/
+  top: 0;
+  z-index: 10;
   color: var(--brand-tekstfarve-lys);
   background-color: var(--brandfarve-primaer);
   font-family: var(--utopia);
@@ -77,7 +79,8 @@ header a{
 }
 
 header a:hover,
-header a:focus{
+header a:focus,
+header .aktiv-fane{
   background-color: var(--brandfarve-primaer-hover);
 }
 
@@ -110,12 +113,14 @@ header a:active{
   }
 
   header a:hover,
-  header a:focus{
+  header a:focus,
+  header .aktiv-fane{
     background-color: transparent;
   }
 
   header a:hover .header-link-hover-effekt,
-  header a:focus .header-link-hover-effekt{
+  header a:focus .header-link-hover-effekt, 
+  header .aktiv-fane .header-link-hover-effekt{
     width: 100%;
   }
 
