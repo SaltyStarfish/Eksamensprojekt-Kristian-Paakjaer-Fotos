@@ -55,12 +55,29 @@
   padding: 8px;
   width: 100%;
   border-radius: 4px;
+  border: 1px solid var(--brandfarve-primaer);
+  background-color: var(--baggrundsfarve-primaer);
 }
 
 .section_kontakt fieldset{
   width: 100%;
   padding: 24px 32px;
   border-radius: 4px;
+  border: 1px solid var(--brandfarve-primaer);
+}
+
+.section_kontakt #div_bekraeft-besked:popover-open{
+  inset: 0;
+  margin: auto;
+  padding:40px;
+  background-color: var(--baggrundsfarve-tertiaer);
+  box-shadow: var(--modern-box-shadow);
+  border-radius: 4px;
+  border-color: var(--brandfarve-primaer);
+}
+
+.section_kontakt #div_bekraeft-besked::backdrop{
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 @media screen and (max-width: 768px){
