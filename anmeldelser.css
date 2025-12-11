@@ -1,6 +1,14 @@
 .anmeldelser {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 20px;
+    gap: 20px;
+}
+
+.stjerner-anmeldelser {
+    gap: 5px;
 }
 
 .anmeldelser-slider {
@@ -20,7 +28,6 @@
     padding: 10px 30px;
     border-radius: 10px;
     box-shadow: var(--modern-box-shadow);
-    text-align: left;
 }
 
 /* skjul horisontal scrollbar, men bevar srollbarens funktionalitet */
@@ -33,7 +40,6 @@
 }
 
 .stjerner {
-    color: var(--sekundaer-brandfarve);
     margin-bottom: 15px;
     font-size: x-large;
     text-align: center;
@@ -42,13 +48,14 @@
 .anmeldelse-card blockquote {
     font-style: italic;
     margin-bottom: 10px;
+    text-align: left;
 }
 
 .anmeldelse-card cite {
     display: block;
-    text-align: center;
     font-style: normal;
     font-weight: bold;
+    text-align: center;
 }
 
 .anmeldelser-pil {
@@ -70,7 +77,8 @@
 }
 
 .venstre {
-    left: 10;
+    text-align: left;
+    left: 10px;
 }
 
 .hoejre {
