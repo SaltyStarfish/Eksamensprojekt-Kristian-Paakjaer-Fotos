@@ -30,7 +30,7 @@
     width: 100%;
     font-family: var(--utopia);
     font-size: var(--h3-size);
-    text-transform: uppercase;
+    text-transform: none;
     padding: 10px 0;
     background: none;
     border: none;
@@ -41,6 +41,7 @@
 .faq-ikon {
     display: inline-block;
     transition: transform 0.3s ease-in-out;
+    font-size: var(--h2-size);
 }
 
 .spoergsmaal.active .faq-ikon {
