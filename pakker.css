@@ -146,3 +146,9 @@
   white-space: pre;
   border-bottom: 1px solid var(--sekundaer-brandfarve)
 }
+
+.section_pakker .p_andre-oensker{
+  padding-inline: 16px;
+  text-wrap: balance;
+  text-align: center;
+}
