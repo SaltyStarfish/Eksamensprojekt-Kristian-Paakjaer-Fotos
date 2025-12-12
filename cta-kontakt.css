@@ -10,7 +10,7 @@
 /*Farver*/
   color: var(--brand-tekstfarve-lys);
   background-color: var(--brandfarve-primaer);
-  box-shadow: var(--inner-box-shadow);
+  box-shadow: var(--inner-box-shadow), var(--modern-box-shadow);
 /*Form*/
   width: 300px;
   height: 64px;
