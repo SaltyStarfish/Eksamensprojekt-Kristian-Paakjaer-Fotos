@@ -1,0 +1,31 @@
+.section_step-by-step h3{
+  text-align: center;
+}
+
+.section_step-by-step .container_step-by-step{
+  max-width: 70ch;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.section_step-by-step .container_step-by-step > *{
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid var(--tekstfarve-faded);
+  padding: 16px 8px 16px 8px;
+  gap: 16px;
+}
+
+.section_step-by-step .step_number{
+  width: 64px;
+  height: 64px;
+  text-align: center;
+  font-family: var(--utopia);
+  font-size: var(--h1-size);
+}
+
+.section_step-by-step .step_text{
+  width: 100%;
+}
