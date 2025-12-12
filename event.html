@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.typekit.net/skt8aqv.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="event.css">
+  <link rel="stylesheet" href="cta-kontakt.css">
+  <link rel="stylesheet" href="forside-vaerdier-tekst-billedbokse.css">
+  <link rel="stylesheet" href="pakker.css">
+  <link rel="stylesheet" href="bryllup.css">
+  <script src="header.js" defer></script>
+  <script  src="pakker.js" defer></script>
+  <title>Eventfoto- og videograf | Kristian Paakjaer Fotos</title>
+</head>
+<body>
+<!-- ----------header---------- -->
+  <header>
+    <nav>
+      <div class="responsive-topnav">
+        <a href="index.html"><p>Kristian Paakjaer</p></a>
+        <button id="btn_burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <menu>
+        <li><a href="index.html">Forside <span class="header-link-hover-effekt"></span></a></li>
+        <li><a class="aktiv-fane" href="bryllup.html">Bryllup <span class="header-link-hover-effekt"></span></a></li>
+        <li><a href="baby.html">Baby <span class="header-link-hover-effekt"></span></a></li>
+        <li><a href="familie.html">Familie <span class="header-link-hover-effekt"></span></a></li>
+        <li><a href="event.html">Event <span class="header-link-hover-effekt"></span></a></li>
+        <li><a href="erhverv.html">Erhverv <span class="header-link-hover-effekt"></span></a></li>
+        <li><a href="galleri.html">Galleri <span class="header-link-hover-effekt"></span></a></li>
+        <li><a href="om-mig.html">Om mig <span class="header-link-hover-effekt"></span></a></li>
+        <li><a href="kontakt.html">Kontakt <span class="header-link-hover-effekt"></span></a></li>
+      </menu>
+    </nav>
+  </header>
+  <main>
+<!-- -------------hero----------- -->
+    <section class="section_hero">
+      <div class="div_hero-container"> <!--  (full-width, half-height, position relative) Dark overlay + divs for content -->
+        <div class="div_hero-overlay">
+          <h1>Eventfotograf <br> Nordjylland</h1>
+          <div class="div_full-width-cta-container">
+            <a class="link_cta" href="kontakt.html">
+              Kontakt mig
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </div>
+        </div>
+        <div class="div_hero-content" id="div_hero-content-1">
+          <div class="div_image-wrapper">
+            <video src="video/kristian-paakjaer-event-hero.mp4" autoplay loop muted></video>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- ---------værdier---------- -->
+<div class="vaerdier-container">
+        <div class="vaerdi">
+            <img src="assets/kristian-paakjaer-oensker.svg" alt="Piktogram af en ønskeliste">
+            <p>Jeres dag &ndash; Jeres ønsker </p>
+        </div>
+
+        <div class="vaerdi">
+            <img src="assets/kristian-paakjaer-gennemsigtige-priser.svg" alt="Piktogram af prismærkat">
+            <p>Gennemsigtige priser</p>
+        </div>
+
+        <div class="vaerdi">
+            <img src="assets/kristian-paakjaer-alle-billeder.svg" alt="Piktogram af åbent fotoalbum">
+            <p>Alle billeder inkluderet</p>
+        </div>
+
+        <div class="vaerdi">
+            <img src="assets/kristian-paakjaer-tilfredshed.svg" alt="Piktogram af et flueben i en cirkel">
+            <p>Tilfredsheds&shy;garanti</p>
+        </div>
+    </div>
+<!-- ------------fitty-fitty------------ -->
+    <div class="div_full-width-cta-container">
+        <div class="tekst-billede-boks">
+            <div class="tekstboks">
+                <h2>Lorem Ipsum</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae. Lorem ipsum
+                    dolor sit amet consectetur adipiscing elit.</p>
+            </div>
+
+            <div class="billedboks">
+                <img src="images/bryllup/kristian-paakjaer-bryllupsbillede3.jpg"
+                    alt="Bryllupsfotograf Nordjylland – brudepar">
+            </div>
+        </div>
+    </div>
+<!-- ---------------pakker------------- -->
+    <section class="section_pakker">
+      <h3>Vælg mellem disse pakker</h3>
+      <div class="container_pakker">
+        <!-- pakke start -->
+        <div class="pakke">
+          <h4>Bryllupspakke 1</h4>
+          <div class="beskrivelse">
+            <p>Fotografering og redigering af billeder</p>
+            <hr>
+            <ul>
+              <li>Vielse</li>
+              <li>Bryllupsshoot</li>
+              <li>1 times reception*</li>
+            </ul>
+            <p>*Afholdes der ikke reception, er det første time af festen</p>
+            <p>Pris: <span class="pris">6.000</span>,- <br> + transport a 2,5 kr./km</p>
+          </div>
+          <button><span class="btn_tekst">Beregn din pris</span><span class="kryds"><span></span><span></span></span></button>
+          <div class="prisberegner">
+<!-- Label for skal ændres fra pakke til pakke -->
+            <label for="bryllup-pakke1-transportaftand">Skriv køreafstand fra Aalborg</label>
+            <div class="pris-input">
+<!-- Input id skal ændres fra pakke til pakke -->
+              <input id="bryllup-pakke1-transportaftand" class="afstand" type="number" placeholder="0" min="0"> <p>km</p>
+            </div>
+            <div class="pris-output">
+              <p>Estimeret pris =</p>
+              <output class="prisberegner-output"></output> 
+            </div>
+          </div>
+        </div>
+        <!-- pakke slut -->
+        <!-- pakke start -->
+        <div class="pakke">
+          <h4>Bryllupspakke 2</h4>
+          <div class="beskrivelse">
+            <p>Fotografering og redigering af billeder</p>
+            <hr>
+            <ul>
+              <li>Vielse</li>
+              <li>Bryllupsshoot</li>
+              <li>Reception</li>
+              <li>Fest til og med brudevals*</li>
+            </ul>
+            <p>*Dog senest kl. 01.00. </p>
+            <p>Pris: <span class="pris">12.000</span>,- <br> + transport a 2,5 kr./km</p>
+          </div>
+          <button><span class="btn_tekst">Beregn din pris</span><span class="kryds"><span></span><span></span></span></button>
+          <div class="prisberegner">
+<!-- Label for skal ændres fra pakke til pakke -->
+            <label for="bryllup-pakke2-transportaftand">Skriv køreafstand fra Aalborg</label>
+            <div class="pris-input">
+<!-- Input id skal ændres fra pakke til pakke -->
+              <input id="bryllup-pakke2-transportaftand" class="afstand" type="number" placeholder="0" min="0"> <p>km</p>
+            </div>
+            <div class="pris-output">
+              <p>Estimeret pris =</p>
+              <output class="prisberegner-output"></output> 
+            </div>
+          </div>
+        </div>
+        <!-- pakke slut -->
+      </div>
+    </section>
+    <br>
+    <br>
+<!-- ------------step-by-step------------- -->
+    <section class="section_step-by-step">
+      <h3>De næste skridt</h3>
+      <div class="container_step-by-step">
+        <div>
+          <div class="step_number"><p>1.</p></div>
+          <div class="step_text"><p>Ring eller send mig en besked - og fortæl om alle jeres vildeste ønsker... eller bare om hvor og hvornår I skal giftes, og så tager vi resten derfra.</p></div>
+        </div>
+        <div>
+          <div class="step_number"><p>2.</p></div>
+          <div  class="step_text"><p>Når vi har sporet os ind på, hvad opgaven er, giver jeg jer prisen. Ikke et overslag - Den endelige  pris. Ingen ubehagelige overraskelser her.</p></div>
+        </div>
+        <div>
+          <div class="step_number"><p>3.</p></div>
+          <div  class="step_text"><p>Kontrakten. Den er vigtig, fordi ...</p></div>
+        </div>
+        <div>
+          <div class="step_number"><p>4.</p></div>
+          <div  class="step_text"><p>Cirka en uge før den store dag mødes vi over en online kop kaffe,  hvor vi får de sidste detaljer på plads. Her har I også mulighed for at komme med ønsker, hvis der en en bestemt stil, I drømmer om.</p></div>
+        </div>
+        <div>
+          <div class="step_number"><p>5.</p></div>
+          <div  class="step_text"><p>Jeres store dag! Skal I bare nyde fuldt ud, og billederne skal jeg nok tage mig af. </p></div>
+        </div>
+        <div>
+          <div class="step_number"><p>6.</p></div>
+          <div  class="step_text"><p>Efter 1-2 uger, har jeg redigeret alle billeder med potentiale, og I får et mulighed for at se dem digitalt. Matcher stilen ikke helt jeres ønsker, så gentages trin 6, indtil I er helt tilfredse.</p></div>
+        </div>
+        <div>
+          <div class="step_number"><p>7.</p></div>
+          <div  class="step_text"><p>Når I har godkendt billederne, får I tilsendt de endelige filer, som I kan gemme, smide på Instagram, fremkalde og hvad I ellers har lyst til. Det er jeres!</p></div>
+        </div>
+      </div>
+    </section>
+<!-- --------------CTA------------- -->
+    <div class="div_full-width-cta-container">
+      <a class="link_cta" href="kontakt.html">
+        Kontakt mig
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </div>
+
+<!-- ------------fitty-fitty------------ -->
+    <div class="div_full-width-cta-container">
+        <div class="tekst-billede-boks">
+            <div class="billedboks">
+                <img src="images/bryllup/kristian-paakjaer-bryllupsbillede19.jpg" alt="Bryllupsfotograf Nordjylland – brudepar">
+            </div>
+            <div class="tekstboks">
+                <h2>Lorem Ipsum</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae. Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+            </div>
+        </div>
+    </div>
+<!-- ---------------FAQ--------------- -->
+    <section class="faq-sektion">
+        <div class="faq-container">
+            <h2>FAQ</h2>
+            <div class="faq">
+                <h3 class="faq-titel">
+                    <button class="spoergsmaal">
+                        Hvorfor vælge en professionel fotograf til vores bryllup?
+                        <span class="faq-ikon">+</span>
+                    </button>
+                </h3>
+                <div class="svar">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam perspiciatis doloribus ut officiis numquam possimus facere et asperiores aspernatur tempora eveniet, eum, quasi laborum, molestias delectus deserunt amet corporis.</p>
+                </div>
+            </div>
+
+            <div class="faq">
+                <h3 class="faq-titel">
+                    <button class="spoergsmaal">
+                    Hvor tidligt skal vi booke vores bryllupsfotograf?
+                    <span class="faq-ikon">+</span>
+                    </button>
+                </h3>
+
+                <div class="svar">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam perspiciatis doloribus ut    officiis numquam possimus facere et asperiores aspernatur tempora eveniet, eum, quasi laborum, molestias delectus deserunt amet corporis.</p>
+                </div>
+            </div>
+
+            <div class="faq">
+                <h3 class="faq-titel">
+                    <button class="spoergsmaal">
+                        Hvor kan vi blive fotograferet?
+                        <span class="faq-ikon">+</span>
+                    </button>
+                </h3>
+                <div class="svar">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam perspiciatis doloribus ut officiis numquam possimus facere et asperiores aspernatur tempora eveniet, eum, quasi laborum, molestias delectus deserunt amet corporis.</p>
+                </div>
+            </div>
+        
+            <div class="faq">
+                <h3 class="faq-titel">
+                    <button class="spoergsmaal">
+                        Kan vi blive fotograferet i et studie?
+                        <span class="faq-ikon">+</span>
+                    </button>
+                </h3>
+                <div class="svar">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam perspiciatis doloribus ut officiis numquam possimus facere et asperiores aspernatur tempora eveniet, eum, quasi laborum, molestias delectus deserunt amet corporis.</p>
+                </div>
+            </div>
+                
+            <div class="faq">
+                <h3 class="faq-titel">
+                    <button class="spoergsmaal">
+                        Kan vi få taget familiefotos efter vielsen?
+                        <span class="faq-ikon">+</span>
+                    </button>
+                </h3>
+                <div class="svar">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam perspiciatis doloribus ut officiis numquam possimus facere et asperiores aspernatur tempora eveniet, eum, quasi laborum, molestias delectus deserunt amet corporis.</p>
+                </div>
+            </div>
+            <div class="faq">
+                <h3 class="faq-titel">
+                    <button class="spoergsmaal">
+                        Hvordan er dine priser i forhold til andre fotografer?
+                        <span class="faq-ikon">+</span>
+                    </button>
+                </h3>
+                <div class="svar">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam perspiciatis doloribus ut officiis numquam possimus facere et asperiores aspernatur tempora eveniet, eum, quasi laborum, molestias delectus deserunt amet corporis.</p>
+                </div>
+            </div>
+            <div class="faq">
+                <h3 class="faq-titel">
+                    <button class="spoergsmaal">
+                        Hvad er med i prisen?
+                        <span class="faq-ikon">+</span>
+                    </button>
+                </h3>
+                <div class="svar">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam perspiciatis doloribus ut officiis numquam possimus facere et asperiores aspernatur tempora eveniet, eum, quasi laborum, molestias delectus deserunt amet corporis.</p>
+                </div>
+            </div>
+            <div class="faq">
+                <h3 class="faq-titel">
+                    <button class="spoergsmaal">
+                        Hvor mange billeder får vi?
+                        <span class="faq-ikon">+</span>
+                    </button>
+                </h3>
+                <div class="svar">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam perspiciatis doloribus ut officiis numquam possimus facere et asperiores aspernatur tempora eveniet, eum, quasi laborum, molestias delectus deserunt amet corporis.</p>
+                </div>
+            </div>
+            <div class="faq">
+                <h3 class="faq-titel">
+                    <button class="spoergsmaal">
+                        Hvad nu hvis vi ikke er tilfredse med de redigerede bryllupsbilleder?
+                        <span class="faq-ikon">+</span>
+                    </button>
+                </h3>
+                <div class="svar">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam perspiciatis doloribus ut officiis numquam possimus facere et asperiores aspernatur tempora eveniet, eum, quasi laborum, molestias delectus deserunt amet corporis.</p>
+                </div>
+            </div>
+            <div class="faq">
+                <h3 class="faq-titel">
+                    <button class="spoergsmaal">
+                        Får vi billederne digitalt eller fremkaldt?
+                        <span class="faq-ikon">+</span>
+                    </button>
+                </h3>
+                <div class="svar">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam perspiciatis doloribus ut officiis numquam possimus facere et asperiores aspernatur tempora eveniet, eum, quasi laborum, molestias delectus deserunt amet corporis.</p>
+                </div>
+            </div>
+            <div class="faq">
+                <h3 class="faq-titel">
+                    <button class="spoergsmaal">
+                        Hvor kan vi få vores fotos fremkaldt?
+                        <span class="faq-ikon">+</span>
+                    </button>
+                </h3>
+                <div class="svar">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam perspiciatis doloribus ut officiis numquam possimus facere et asperiores aspernatur tempora eveniet, eum, quasi laborum, molestias delectus deserunt amet corporis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="div_full-width-cta-container">
+      <a class="link_cta" href="kontakt.html">
+        Kontakt mig
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </div>
+  </main>
+<!-- ---------------------footer-------------- -->
+  <footer>
+        <div class="footer-indhold">
+            <div class="footer-venstre">
+                <div class="google-kort">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2171.947992579582!2d9.932695!3d57.018196499999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464a5b50257cd627%3A0x114cdd4d18ec9f86!2sKristian%20Paakj%C3%A6r%20Fotos!5e0!3m2!1sen!2sdk!4v1764887489358!5m2!1sen!2sdk"
+                        width="220" height="220" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div class="footer-midte">
+                <div class="adresse">
+                    <h4>Adresse</h4>
+                    <p>Beatesmindevej 70</p>
+                    <p>9210 Aalborg SØ</p><br>
+                    <p>Tlf.: 23 92 59 88</p>
+                    <p>CVR: 42954969</p>
+                </div>
+            </div>
+
+            <div class="footer-hoejre">
+                <div class="links">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="#">Kontakt mig</a></li>
+                        <li><a href="#">Galleri</a></li>
+                        <li><a href="#">Bryllupsfotos</a></li>
+                    </ul>
+                </div>
+
+                <div class="sociale-medier">
+                    <a href="https://www.instagram.com/kristian_paakjaer_fotos/" target="_blank">
+                        <img src="assets/Instagram_Glyph_White.png" alt="Min Instagram">
+                    </a>
+                    <a href="https://www.facebook.com/KristianPaakjaerFotos" target="_blank">
+                        <img src="assets/Facebook_Logo_Secondary.png" alt="Min Facebook-side">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+</body>
+</html>
