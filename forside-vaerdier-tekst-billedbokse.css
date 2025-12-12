@@ -19,9 +19,8 @@
 .tekst-billede-boks {
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 60px;
-    margin: 0 auto;
+    margin-top: 5vh;
     padding: 0 30px;
     max-width: 1200px;
     width: 100%;
