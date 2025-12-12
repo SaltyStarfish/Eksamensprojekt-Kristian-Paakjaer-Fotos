@@ -51,28 +51,28 @@
 }
 
 .section_kategorier .kategori-bryllup{
-  background-image: url(https://www-static.kristianpaakjaer.dk/wp-content/uploads/2025/02/fokuskasse-01.jpg);
+  background-image: url(images/bryllup/kristian-paakjaer-bryllupsbillede2.jpg);
   background-position: center 25%; /* Juster baggrundsbilledets position - procent afgør hvor billedets "midte" skal være */
 
 }
 
 .section_kategorier .kategori-baby{
-  background-image: url(https://www-static.kristianpaakjaer.dk/wp-content/uploads/2025/09/KristianPaakjaer-19666-scaled.jpg);
+  background-image: url(images/baby/kristian-paakjaer-babybillede10.jpg);
   background-position: center 45%;
 }
 
 .section_kategorier .kategori-familie{
-  background-image: url(https://www-static.kristianpaakjaer.dk/wp-content/uploads/2025/02/fokuskasse-04.jpg);
+  background-image: url(images/familie/kristian-paakjaer-familiebilleder4.jpg);
   background-position: center 15%;
 }
 
 .section_kategorier .kategori-event{
-  background-image: url(https://www-static.kristianpaakjaer.dk/wp-content/uploads/2025/02/fokuskasse-02.jpg);
+  background-image: url(images/event/kristian-paakjaer-eventbilleder11.jpg);
   background-position: center 45%;
 }
 
 .section_kategorier .kategori-erhverv{
-  background-image: url(https://www-static.kristianpaakjaer.dk/wp-content/uploads/2025/02/fokuskasse-03.jpg);
+  background-image: url(images/erhverv/kristian-paakjaer-erhvervsbilleder2.jpg);
 }
 
 .section_kategorier a{
