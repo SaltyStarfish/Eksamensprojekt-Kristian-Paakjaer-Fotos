@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 400px;
+    max-width: 600px;
     padding: 40px;
     text-align: center;
 }
@@ -24,7 +24,10 @@
 }
 
 .spoergsmaal {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
     font-family: var(--utopia);
     font-size: var(--h3-size);
     text-transform: uppercase;
@@ -38,7 +41,6 @@
 .faq-ikon {
     display: inline-block;
     transition: transform 0.3s ease-in-out;
-    margin-left: 40px;
 }
 
 .spoergsmaal.active .faq-ikon {
