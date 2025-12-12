@@ -33,32 +33,6 @@
     z-index: 10;
 }
 
-.tekst-billede-boks {
-    display: flex;
-    justify-content: center;
-    gap: 60px;
-    margin-top: 5vh;
-    padding: 0 30px;
-    max-width: 1200px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.tekstboks {
-    max-width: 350px;
-    min-width: 250px;
-}
-
-.billedboks {
-   max-width: 600px;
-   min-width: 250px;
-}
-
-.billedboks img {
-    width: 100%;
-    height: auto;
-}
-
 .showreel {
     text-align: center;
     margin: 50px 0px;

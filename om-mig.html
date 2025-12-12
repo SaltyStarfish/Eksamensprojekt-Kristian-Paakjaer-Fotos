@@ -8,12 +8,42 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/skt8aqv.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="cta-kontakt.css">
+    <link rel="stylesheet" href="forside-vaerdier-tekst-billedbokse.css">
     <link rel="stylesheet" href="om-mig.css">
     <script src="om-mig.js" defer></script>
     <title>Kristian Paakjaer Fotos – Om mig</title>
 
 </head>
 <body>
+<!-- ----------header---------- -->
+  <header>
+    <nav>
+      <div class="responsive-topnav">
+        <a href="index.html"><p>Kristian Paakjaer</p></a>
+        <button id="btn_burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <menu>
+        <li><a href="index.html">Forside <span class="header-link-hover-effekt"></span></a></li>
+        <li><a class="aktiv-fane" href="bryllup.html">Bryllup <span class="header-link-hover-effekt"></span></a></li>
+        <li><a href="baby.html">Baby <span class="header-link-hover-effekt"></span></a></li>
+        <li><a href="familie.html">Familie <span class="header-link-hover-effekt"></span></a></li>
+        <li><a href="event.html">Event <span class="header-link-hover-effekt"></span></a></li>
+        <li><a href="erhverv.html">Erhverv <span class="header-link-hover-effekt"></span></a></li>
+        <li><a href="galleri.html">Galleri <span class="header-link-hover-effekt"></span></a></li>
+        <li><a href="om-mig.html">Om mig <span class="header-link-hover-effekt"></span></a></li>
+        <li><a href="kontakt.html">Kontakt <span class="header-link-hover-effekt"></span></a></li>
+      </menu>
+    </nav>
+  </header>
+  <main>
+
     <section class="hero-statisk">
       <img src="images/om-mig-hero.png" alt="Fotograf Kristian Paakjær">
         <div class="div_hero-overlay">
@@ -35,7 +65,6 @@
 
     </div>
 
-
     <section class="showreel">
         <h2>Se min showreel</h2>
         <video controls>
@@ -43,6 +72,16 @@
             Din browser understøtter desværre ikke video-tagget.
         </video>
     </section>
+
+    <div class="div_full-width-cta-container">
+        <a class="link_cta" href="kontakt.html">
+            Kontakt mig
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+  </div>
 
     <section class="karriere">
         <h2>Min karriere</h2>
@@ -92,5 +131,51 @@
         </div>
 
     </section>
+
+
+<!-- ---------------------footer-------------- -->
+  <footer>
+        <div class="footer-indhold">
+            <div class="footer-venstre">
+                <div class="google-kort">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2171.947992579582!2d9.932695!3d57.018196499999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464a5b50257cd627%3A0x114cdd4d18ec9f86!2sKristian%20Paakj%C3%A6r%20Fotos!5e0!3m2!1sen!2sdk!4v1764887489358!5m2!1sen!2sdk"
+                        width="220" height="220" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div class="footer-midte">
+                <div class="adresse">
+                    <h4>Adresse</h4>
+                    <p>Beatesmindevej 70</p>
+                    <p>9210 Aalborg SØ</p><br>
+                    <p>Tlf.: 23 92 59 88</p>
+                    <p>CVR: 42954969</p>
+                </div>
+            </div>
+
+            <div class="footer-hoejre">
+                <div class="links">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="#">Kontakt mig</a></li>
+                        <li><a href="#">Galleri</a></li>
+                        <li><a href="#">Bryllupsfotos</a></li>
+                    </ul>
+                </div>
+
+                <div class="sociale-medier">
+                    <a href="https://www.instagram.com/kristian_paakjaer_fotos/" target="_blank">
+                        <img src="images/Instagram_Glyph_White.png" alt="Min Instagram">
+                    </a>
+                    <a href="https://www.facebook.com/KristianPaakjaerFotos" target="_blank">
+                        <img src="images/Facebook_Logo_Secondary.png" alt="Min Facebook-side">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
 </body>
 </html>
