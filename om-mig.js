@@ -1,15 +1,16 @@
-const highlights = document.querySelectorAll('.karriere-highlights');
+const punkter = document.querySelectorAll('.punkt');
 
 function scrollEffekt() {
     const windowHeight = window.innerHeight;
 
-    highlights.forEach(highlight => {
-        const elementTop = highlight.getBoundingClientRect().top;
+    punkter.forEach(punkt => {
+        const top = punkt.getBoundingClientRect().top;
 
-        if (elementTop < windowHeight - 100) {
-            highlight.classList.add('aktiv');
+        if (top < windowHeight - 100) {
+            punkt.classList.add('aktiv');
         }
     });
 }
 
 window.addEventListener('scroll', scrollEffekt);
+window.addEventListener('load', scrollEffekt);
