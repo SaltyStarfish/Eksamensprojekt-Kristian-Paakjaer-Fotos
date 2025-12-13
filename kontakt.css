@@ -1,3 +1,76 @@
+/* -------Hero + billeder i bunden------- */
+.section_hero .div_hero-container{
+  position: relative;
+  display: flex;
+  height: 50vh;
+  overflow-y: hidden;
+}
+
+.section_hero .div_hero-overlay{
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section_hero h1{
+  text-align: center;
+  color: var(--brand-tekstfarve-lys);
+  line-height: 1;
+  font-weight: 400;
+}
+
+.section_hero .div_hero-content{
+  position: absolute;
+  inset: 0;
+  display: flex;
+  z-index: 1;
+}
+
+.section_hero .div_image-wrapper{
+  width: 100%;
+}
+
+.section_hero img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px){
+
+  .section_hero .div_hero-container{
+    height: 40vh;
+  }
+  .section_hero h1{
+    font-size: var(--h3-size);
+  }
+}
+
+/* ----------intro-tekst------- */
+.section_kontakt .div_kontakt-introtekst{
+  margin-inline: auto;
+  margin-block: 48px;
+  text-wrap: pretty;
+  width: fit-content;
+  max-width: 60ch;
+}
+
+.section_kontakt .div_kontakt-introtekst > *{
+  padding: 12px;
+}
+
+
+/* --------kontaktinfo + formular-------- */
+.section_kontakt a{
+  color: inherit;
+
+}
+
 .section_kontakt .flexbox_kontakt{
   display: flex;
   max-width: 1024px;
@@ -57,6 +130,8 @@
   border-radius: 4px;
   border: 1px solid var(--brandfarve-primaer);
   background-color: var(--baggrundsfarve-primaer);
+  font-family: var(--inter);
+  font-style: italic;
 }
 
 .section_kontakt fieldset{
