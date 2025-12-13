@@ -1,0 +1,33 @@
+.tidligere-samarbejder {
+    position: relative;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.erhvervsslider {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    gap: 60px;
+    padding: 20px 0;
+
+}
+
+/* skjul horisontal scrollbar, men bevar srollbarens funktionalitet */
+.erhvervsslider::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.erhvervsslider {
+    scrollbar-width: none; /* Firefox */
+}
+
+.erhvervsslider img {
+    width: 20%; /* 5 logoer vises ad gangen */
+    max-width: 200px;
+    height: auto;
+    object-fit: contain;
+}
+
