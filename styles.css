@@ -29,6 +29,7 @@ https://www.w3schools.com/css/css3_variables.asp */
 }
 
 body {
+  background-color: var(--baggrundsfarve-primaer);
   font-family: var(--inter);
   font-size: var(--body-size);
   color: var(--tekstfarve-primaer);
