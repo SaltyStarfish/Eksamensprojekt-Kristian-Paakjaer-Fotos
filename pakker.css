@@ -27,6 +27,7 @@
   padding: 22px 18px;
   /* gap: 24px; - giver underligt whitespace i bunden. Find anden løsning*/
   transition: all 0.3s;
+  accent-color: var(--sekundaer-brandfarve);
 }
 
 .section_pakker .pakke p, .pakke ul{
