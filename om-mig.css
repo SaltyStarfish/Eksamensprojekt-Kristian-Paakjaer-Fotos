@@ -33,35 +33,29 @@
     z-index: 10;
 }
 
-.showreel {
-    text-align: center;
-    margin: 50px 0px;
-}
-
 .showreel video{
     width: 100%;
     max-width: 800px;
+    padding-top: 50px;
 }
 
 .karriere {
-    max-width: 25%;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 60px 40px;
 }
 
-.karriere h2 {
+.showreel, .karriere h2 {
     text-align: center;
-    margin-bottom: 40px;
 }
 
 .punkt {
     display: flex;
-    justify-content: flex-start;
-    gap: 40px;
+    align-items: center;
+    gap: 80px;
     padding: 0 20px;
-    max-width: 1000px;
-    width: 100%;
     margin: 80px 0;
+    box-sizing: border-box;
     position: relative;
     z-index: 1;
 }
@@ -70,24 +64,23 @@
     flex-direction: row-reverse;
 }
 
+.karriere-billede   {
+    max-width: 450px;
+    width: 100%;
+}
 
 .karriere-billede img {
     width: 100%;
-    min-width: 250px;
-    height: 350px;
+    max-width: 400px;
+    height: auto;
     object-fit: cover;
     display: block;
-    opacity: 0;
-    transform: translateY(20px) scale(0.98);
-    transition: opacity 0.8s ease, transform 0.8s ease;
-    transition-delay: 0.2s;
 }
 
 .karriere-tekst {
-    opacity: 0;
-    transform: translateY(20px) scale(0.98);
-    transition: opacity 0.8s ease, transform 0.8s ease;
-    transition-delay: 0.6s;
+    flex: 1;
+    max-width: 450px;
+    text-align: left;
 }
 
 .karriere-tekst h3 {
@@ -95,10 +88,10 @@
 }
 
 .karriere-tekst,
-.karriere-billede {
-    min-width: 300px;
-    max-width: 400px;
-    flex: 1;
+.karriere-billede img {
+    opacity: 0;
+    transform: translateY(30px) scale(0.98);
+    transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .punkt.aktiv .karriere-billede img,
@@ -106,3 +99,77 @@
     opacity: 1;
     transform: translateY(0) scale(1);
 }
+
+.karriere-billede img {
+    transition-delay: 0.2s;
+}
+
+.karriere-tekst {
+    transition-delay: 0.6s;
+}
+
+
+/* Responsivt */
+/* -------------------- STOR TABLET -------------------- */
+@media (max-width: 1024px) {
+
+    .hero-statisk {
+        height: 50vh;
+    }
+
+    .showreel video {
+        max-width: 600px;
+    }
+    
+}
+
+/* -------------------- LIDT MINDRE TABLET -------------------- */
+@media (max-width: 900px) {
+    .punkt,
+    .punkt.reversed {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin: 50px 0;
+    }
+
+    .punkt .karriere-tekst,
+    .punkt.reversed .karriere-tekst {
+        order: 1;
+        width: 100%;
+        text-align: left;
+    }
+
+    .punkt .karriere-billede,
+    .punkt.reversed .karriere-billede {
+        order: 2;
+        width: 100%;
+    }
+}
+
+/* -------------------- MOBIL -------------------- */
+@media (max-width: 480px) {
+
+    .hero-statisk {
+        height: 40vh;
+    }
+
+    .showreel video {
+        max-width: 100%;
+    }
+
+    .karriere {
+        padding: 20px 15px;
+    }
+
+    .punkt,
+    .punkt.reversed {
+        gap: 15px;
+        margin: 40px 0;
+    }
+    
+}
+
+
+
+
