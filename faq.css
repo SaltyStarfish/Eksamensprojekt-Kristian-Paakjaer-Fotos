@@ -15,10 +15,6 @@
     text-align: center;
 }
 
-.faq-container h2 {
-    margin-bottom: 30px;
-}
-
 .faq {
     margin-bottom: 10px;
 }
@@ -49,15 +45,11 @@
 }
 
 .svar {
-    max-height: 0;
+    height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-out;
+    transition: height 0.4s ease-in-out;
     text-align: left;
     padding-left: 10px;
     margin-top: 10px;
-}
-
-.svar.aaben {
-    max-height: 500px;
-    padding: 10px 0;
+    box-sizing: border-box;
 }
