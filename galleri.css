@@ -1,7 +1,9 @@
 .galleri {
     position: relative;
-    margin: 20px;
+    margin: 0 auto;
     text-align: center;
+    max-width: 1600px;
+    padding: 20px;
 }
 
 .galleri-slider {
@@ -14,17 +16,18 @@
 }
 
 .galleri-slider img {
-    width: 33.33%; /* 3 billeder vises ad gangen på desktop */
-    height: 400px;
+    width: 25%; /* 4 billeder vises ad gangen på desktop */
+    max-width: 400px;
+    max-height: 400px;
     object-fit: cover;
     scroll-snap-align: start;
     flex: 0 0 auto; /* bruges til responsiv snap, så billedet ikke formindskes */
     cursor: pointer; /* pointer ved hover over billede for at vise, det er klikbart */
+    transition: transform 0.3s;
 }
 
 .galleri-slider img:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s;
+    transform: scale(1.03);
 }
 
 .galleri-pil {
@@ -39,7 +42,7 @@
     transform: translateY(-50%);
     transition: transform 0.2s opacity 0.2s;
     z-index: 10;
-    backdrop-filter: blur (5px);
+    backdrop-filter: blur(5px);
     mix-blend-mode: difference;
 }
 
@@ -48,11 +51,11 @@
 }
 
 .venstre {
-    left: 10px;
+    left: 20px;
 }
 
 .hoejre {
-    right: 10px;
+    right: 20px;
 }
 
 /* skjul horisontal scrollbar, men bevar srollbarens funktionalitet */
@@ -64,6 +67,7 @@
     scrollbar-width: none; /* Firefox */
 }
 
+/* Kilde: https://www.youtube.com/watch?v=uKVVSwXdLr0 */
 #lightbox {
     position: fixed;
     z-index: 1000;
@@ -78,11 +82,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
-#lightbox img {
+#lightbox-billede {
     max-width: 90%;
     max-height: 80%;
+    z-index: 1000;
 }
 
 
@@ -101,19 +107,25 @@
     opacity: 0.9;
 }
 
-
 /* responsiv */
 
-/* tablet med 2 billeder per række */
+/* laptop */
+@media (max-width: 1280px) {
+    .galleri-slider img {
+        width: 33.3%; /* = 3 billeder vises ad gangen */
+    }
+}
+
+/* tablet */
 @media (max-width: 1000px) {
     .galleri-slider img {
         width: 50%; /* = 2 billeder vises ad gangen */
     }
 }
 
-/* mobil med 1 billede ad gangen */
+/* mobil */
 @media (max-width: 600px) {
     .galleri-slider img {
-        width: 100%;
+        width: 100%; /* = 1 billede vises ad gangen */
     }
 }
