@@ -12,7 +12,9 @@
     scroll-behavior: smooth;
     gap: 60px;
     padding: 20px 40px;
-    scroll-snap-type: x mandatory;
+    scroll-snap-type: x mandatory; /*forhindrer cut-off på logoerne*/
+    scroll-padding-left: 60px;
+    scroll-padding-right: 60px;
 }
 
 /* skjul horisontal scrollbar, men bevar srollbarens funktionalitet */
@@ -29,7 +31,7 @@
     max-width: 200px;
     height: auto;
     object-fit: contain;
-    scroll-snap-align: start;
+    scroll-snap-align: start; /* dette sikrer, at logoet "snapper" til starten af slideren, når der scrolles, så et logo ikke kun vises delvist */
 }
 
 .erhverv-pil {
