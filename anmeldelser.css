@@ -8,7 +8,12 @@
 }
 
 .stjerner-anmeldelser {
-    gap: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3px;
+    width: 40px;
+    height: 40px;
 }
 
 .anmeldelser-slider {
@@ -40,9 +45,17 @@
 }
 
 .stjerner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3px;
     margin-bottom: 15px;
-    font-size: x-large;
-    text-align: center;
+}
+
+.stjerner img {
+    width: 20%;
+    max-width: 25px;
+    height: auto;
 }
 
 .anmeldelse-card blockquote {
@@ -56,12 +69,13 @@
     font-style: normal;
     font-weight: bold;
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .anmeldelser-pil {
     position: absolute;
     cursor: pointer;
-    top: 90%;
+    top: 85%;
     font-size: 30px;
     color: var(--tekstfarve-primaer);
     border: none;
@@ -77,7 +91,6 @@
 }
 
 .venstre {
-    text-align: left;
     left: 10px;
 }
 
