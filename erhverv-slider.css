@@ -1,14 +1,15 @@
 .tidligere-samarbejder {
-    position: relative;
-    max-width: 1600px;
-    margin: 0 auto;
     padding: 40px 20px;
     text-align: center;
 }
 
 .erhvervsslider {
     display: flex;
-    overflow-x: scroll;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
     scroll-behavior: smooth;
     gap: 60px;
     padding: 20px 40px;
@@ -26,18 +27,10 @@
     scrollbar-width: none; /* Firefox */
 }
 
-.erhvervsslider img {
-    width: 20%; /* 5 logoer vises ad gangen som udgangspunkt */
-    max-width: 200px;
-    height: auto;
-    object-fit: contain;
-    scroll-snap-align: start; /* dette sikrer, at logoet "snapper" til starten af slideren, når der scrolles, så et logo ikke kun vises delvist */
-}
-
 .erhverv-pil {
     position: absolute;
     cursor: pointer;
-    top: 50%;
+    top: 20%;
     font-size: 30px;
     color: white;
     border: none;
@@ -47,9 +40,37 @@
 }
 
 .venstre {
-    left: 10px;
+    left: 20px;
 }
 
 .hoejre {
-    right: 10px;
+    right: 20px;
+}
+
+/*kilde til at få slideren til at scrolle automatisk via keyframes-animation: https://www.youtube.com/watch?v=KD1Yo8a_Qis */
+.gruppe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: max-content;
+    animation: spin 25s infinite linear;
+}
+
+.gruppe img {
+    height: 100px;
+    width: auto;
+    padding: 10px;
+    object-fit: contain;
+    flex-shrink: 0;
+    max-width: 200px;
+}
+
+@keyframes spin {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
 }
