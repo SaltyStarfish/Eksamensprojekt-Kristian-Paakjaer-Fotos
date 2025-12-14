@@ -1,15 +1,20 @@
 const slider = document.querySelector('.anmeldelser-slider');
+const venstrePil = document.querySelector('.venstre');
+const hoejrePil = document.querySelector('.hoejre');
 
-document.querySelector('.venstre').addEventListener('click', () => {
+// definerer hvor langt slideren skal rykke per klik //
+const scrollLængde = 370;
+
+venstrePil.addEventListener('click', () => {
     slider.scrollBy({
-        left: -300,
-        behavior: 'smooth',
+        left: -scrollLængde,
+        behavior: 'smooth'
     });
 });
 
-document.querySelector('.hoejre').addEventListener('click', () => {
+hoejrePil.addEventListener('click', () => {
     slider.scrollBy({
-        left: 300,
-        behavior: 'smooth',
+        left: scrollLængde,
+        behavior: 'smooth'
     });
 });
