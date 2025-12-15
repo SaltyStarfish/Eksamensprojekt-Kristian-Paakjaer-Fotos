@@ -10,12 +10,22 @@
     text-align: center;
 }
 
+.anmeldelser h2 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.anmeldelser h4 {
+    text-transform:none
+}
+
+
 .stjerner-anmeldelser {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 5px;
-    margin-bottom: 10;
+    margin-bottom: 20px;
 }
 
 .stjerner-anmeldelser img {
@@ -40,6 +50,7 @@
     scroll-snap-align: start;
     background-color: var(--baggrundsfarve-tertiaer);
     padding: 20px;
+    margin-top: 20px;
     border-radius: 10px;
     box-shadow: var(--modern-box-shadow);
 }
@@ -106,12 +117,11 @@
     right: 10px;
 }
 
-.se-flere-anmeldelser {
+.eksternt-link {
     display: block;
-    color: var(--tekstfarve-primaer);
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out;
     text-align: center;
+    text-decoration: underline;
+
 }
 
 .se-flere-anmeldelser:hover {
