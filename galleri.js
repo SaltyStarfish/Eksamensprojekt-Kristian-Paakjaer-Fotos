@@ -29,6 +29,7 @@ images.forEach(image => {
 
         const img = document.createElement('img')
         img.src = image.src
+        img.id = 'lightbox-billede';
         lightbox.appendChild(img);
 
         const closeBtn = document.createElement('div');
