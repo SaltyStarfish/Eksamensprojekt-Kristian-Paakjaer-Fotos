@@ -61,11 +61,19 @@ h4 {
 }
 
 
-/* interne links skifter ikke farve */
+/* interne og eksterne links skifter ikke farve */
 .internt-link:hover,
 .internt-link:active,
 .internt-link:visited {
     color: var(--tekstfarve-primaer);
+    text-decoration: underline;
+}
+
+.eksternt-link:hover,
+.eksternt-link:active,
+.eksternt-link:visited {
+    color: var(--tekstfarve-primaer);
+    text-decoration: underline;
 }
 
 /*Reset CSS*/

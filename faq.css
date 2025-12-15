@@ -53,3 +53,11 @@
     margin-top: 10px;
     box-sizing: border-box;
 }
+
+.svar a.eksternt-link,
+.svar a.eksternt-link:visited,
+.svar a.eksternt-link:hover,
+.svar a.eksternt-link:active {
+    color: var(--tekstfarve-primaer);
+    text-decoration: underline;
+}
