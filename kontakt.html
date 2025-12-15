@@ -16,7 +16,9 @@
   <link rel="stylesheet" href="kontakt.css">
   <script src="header.js" defer></script>
   <script src="kontakt-formular.js" defer></script>
-  <title>Kontakt formular | Kristian Paakjaer Fotos</title>
+  <title>Kontaktformular | Kristian Paakjaer Fotos</title>
+  <meta name="description" content="Kontakt professionel fotograf Kristian Paakjær for booking eller spørgsmål til dit fotoshoot. Udfyld formularen, så svarer jeg hurtigt tilbage.">
+
 </head>
 <body>
   <!-- ----------header---------- -->
@@ -52,7 +54,7 @@
         </div>
         <div class="div_hero-content" id="div_hero-content-1">
           <div class="div_image-wrapper">
-            <img class="image1" src="images/natur/kristian-paakjaer-naturbilleder6.jpg">
+            <img class="image1" src="images/natur/kystlinjen-hvide-sanne.jpg" alt="kystlinjen i Hvide Sanne set fra oven">
           </div>
         </div>
       </div>
@@ -92,17 +94,17 @@
 <!-- https://www.w3schools.com/tags/tag_form.asps -->
       <form id="kontakt-formular" action="#">
         <fieldset>
-          <legend>Kontakt-formular:</legend>
+          <legend>Kontaktformular:</legend>
           <label for="form-input_navn">Navn: <span class="stjerne">*</span></label><br>
           <input type="text" id="form-input_navn" name="Navn" required placeholder="Jens Jensen"><br><br>
-          <label for="form-input_email">Email: <span class="stjerne">*</span></label><br>
+          <label for="form-input_email">E-mail: <span class="stjerne">*</span></label><br>
           <input type="email" id="form-input_email" name="email" required placeholder="jensjensen@eksempel.dk"><br><br>
           <label for="form-input_telefon">Telefon:</label><br>
           <input type="tel" id="form-input_telefon" name="Telefon" placeholder="12 23 34 45"><br><br>
           <label for="form-input_besked">Din besked: <span class="stjerne">*</span></label><br>
           <textarea id="form-input_besked" name="Din besked" rows="8" cols="40" required placeholder="Hej Kristian. 
 Kan du hjælpe mig med en opgave...?"></textarea>
-          <p><span class="stjerne">*</span>oblikatorisk felt</p><br>
+          <p><span class="stjerne">*</span>obligatorisk felt</p><br>
           <button id="btn_validator" type="button" class="link_cta" popovertarget="div_bekraeft-besked">
             Send besked
             <span></span>
@@ -114,7 +116,7 @@ Kan du hjælpe mig med en opgave...?"></textarea>
           <div popover="auto" id="div_bekraeft-besked">
             <p>Du er ved at sende denne besked:</p><br><br>
             <p>Navn: <span id="review-navn"></span></p><br>
-            <p>Email: <span id="review-email"></span></p><br>
+            <p>E-mail: <span id="review-email"></span></p><br>
             <p>Telefon: <span id="review-telefon"></span></p><br>
             <p>Besked: <br><span id="review-besked"></span></p><br><br>
             <p>Ser det rigtigt ud?</p>
@@ -137,13 +139,13 @@ Kan du hjælpe mig med en opgave...?"></textarea>
       <div class="div_hero-container"> <!--  (full-width, half-height, position relative) Dark overlay + divs for content -->
         <div class="div_hero-content" id="div_hero-content-1">
           <div class="div_image-wrapper">
-            <img class="image1" src="images/kristian/Kristian-spejder-mod-solen.png">
+            <img class="image1" src="images/kristian/kristian-spejder-mod-solen.jpg" alt="Kristian spejder mod solen">
           </div>
           <div class="div_image-wrapper">
-            <img class="image2" src="images/kristian/kristian-paakjaer-himself-closeup.png">
+            <img class="image2" src="images/kristian/kristian-paakjaer-closeup.jpg" alt="Closeup af Kristian med videoudstyr">
           </div>
           <div class="div_image-wrapper">
-            <img class="image3" src="images/kristian/Kristian-strand.png">
+            <img class="image3" src="images/kristian/kristian-bunker-paa-stranden.jpg" alt="Kristian står på en bunker på stranden ved Vesterhavet">
           </div>
         </div>
       </div>
