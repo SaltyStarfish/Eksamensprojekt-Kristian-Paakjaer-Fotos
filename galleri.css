@@ -1,9 +1,27 @@
-.galleri {
+/* ----------intro-tekst------- */
+.galleri-introtekst{
+  margin-inline: auto;
+  margin-block: 48px;
+  text-wrap: pretty;
+  width: fit-content;
+  max-width: 60ch;
+}
+
+.galleri-introtekst > *{
+  padding: 12px;
+}
+
+.galleri-sektion {
     position: relative;
     margin: 0 auto;
-    text-align: center;
     max-width: 1600px;
     padding: 20px;
+}
+
+.galleri-kategori {
+    text-align: center;
+    position: relative;
+    margin-block: 40px;
 }
 
 .galleri-slider {
@@ -15,7 +33,7 @@
     scroll-snap-type: x mandatory;
 }
 
-.galleri-slider img {
+.galleri-kategori img {
     width: 25%; /* 4 billeder vises ad gangen på desktop */
     max-width: 400px;
     max-height: 400px;
@@ -26,7 +44,7 @@
     transition: transform 0.3s;
 }
 
-.galleri-slider img:hover {
+.galleri-kategori img:hover {
     transform: scale(1.03);
 }
 
@@ -111,21 +129,21 @@
 
 /* laptop */
 @media (max-width: 1280px) {
-    .galleri-slider img {
+    .galleri-kategori img {
         width: 33.3%; /* = 3 billeder vises ad gangen */
     }
 }
 
 /* tablet */
 @media (max-width: 1000px) {
-    .galleri-slider img {
+    .galleri-kategori img {
         width: 50%; /* = 2 billeder vises ad gangen */
     }
 }
 
 /* mobil */
 @media (max-width: 600px) {
-    .galleri-slider img {
+    .galleri-kategori img {
         width: 100%; /* = 1 billede vises ad gangen */
     }
 }
