@@ -60,6 +60,14 @@ h4 {
   text-transform: uppercase;
 }
 
+
+/* interne links skifter ikke farve */
+.internt-link:hover,
+.internt-link:active,
+.internt-link:visited {
+    color: var(--tekstfarve-primaer);
+}
+
 /*Reset CSS*/
 *{
   box-sizing: border-box;
