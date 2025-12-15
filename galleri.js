@@ -1,17 +1,19 @@
-const slider = document.querySelector('.galleri-slider');
+const gallerier = document.querySelectorAll('.galleri-kategori');
 
-document.querySelector('.venstre').addEventListener('click', () => {
-    slider.scrollBy({
-        left: -400,
-        behavior: 'smooth',
-    });
-});
+gallerier.forEach((galleri) => {
+  const slider = galleri.querySelector('.galleri-slider');
+  const btnVenstre = galleri.querySelector('.venstre');
+  const btnHoejre = galleri.querySelector('.hoejre');
 
-document.querySelector('.hoejre').addEventListener('click', () => {
-    slider.scrollBy({
-        left: 400,
-        behavior: 'smooth',
-    });
+  // Venstre-knap
+  btnVenstre.addEventListener('click', () => {
+    slider.scrollBy({ left: -400, behavior: 'smooth' });
+  });
+
+  // Højre-knap
+  btnHoejre.addEventListener('click', () => {
+    slider.scrollBy({ left: 400, behavior: 'smooth' });
+  });
 });
 
 const lightbox = document.createElement('div')
