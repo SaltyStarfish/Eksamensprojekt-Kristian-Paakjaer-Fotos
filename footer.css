@@ -49,6 +49,15 @@ footer ul {
 
 footer .links a {
     text-decoration: underline;
+    color: inherit;
+}
+
+footer .links a:link,
+footer .links a:visited,
+footer .links a:hover,
+footer .links a:active {
+    color: inherit;
+    text-decoration: underline;
 }
 
 footer .sociale-medier a {
