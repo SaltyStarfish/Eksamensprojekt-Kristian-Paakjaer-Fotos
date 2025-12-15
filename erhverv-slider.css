@@ -27,27 +27,6 @@
     scrollbar-width: none; /* Firefox */
 }
 
-.erhverv-pil {
-    position: absolute;
-    cursor: pointer;
-    top: 15%;
-    font-size: 30px;
-    color: white;
-    border: none;
-    padding: 5px;
-    background: rgb(58, 58, 58, 0.5);
-    transform: translateY(-50%);
-    z-index: 9;
-}
-
-.venstre {
-    left: 20px;
-}
-
-.hoejre {
-    right: 20px;
-}
-
 /*kilde til at få slideren til at scrolle automatisk via keyframes-animation: https://www.youtube.com/watch?v=KD1Yo8a_Qis */
 .gruppe {
     display: flex;
@@ -91,18 +70,6 @@
     .gruppe {
         animation-duration: 15s;
     }
-
-    .erhverv-pil {
-        top: 10%;
-    }
-
-    .venstre {
-        left: 5px;
-    }
-
-    .hoejre {
-        right: 5px;
-    }
     
 }
 
@@ -120,19 +87,5 @@
 
     .gruppe {
         animation-duration: 15s;
-    }
-
-    .erhverv-pil {
-        font-size: 24px;
-        top: 22%;
-        padding: 3px;
-    }
-
-    .venstre {
-        left: 5px;
-    }
-
-     .hoejre {
-        right: 5px;
     }
 }
