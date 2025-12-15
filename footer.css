@@ -48,14 +48,7 @@ footer ul {
 }
 
 footer .links a {
-    text-decoration: none;
-    color: var(--brand-tekstfarve-lys);
-    transition: all 0.3s ease-in-out;
-}
-
-footer .links a:hover {
-    font-weight: bold;
-    font-size: 18px;
+    text-decoration: underline;
 }
 
 footer .sociale-medier a {
