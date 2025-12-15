@@ -54,6 +54,14 @@
     box-sizing: border-box;
 }
 
+.svar a.internt-link,
+.svar a.internt-link:visited,
+.svar a.internt-link:hover,
+.svar a.internt-link:active {
+    color: var(--tekstfarve-primaer);
+    text-decoration: underline;
+}
+
 .svar a.eksternt-link,
 .svar a.eksternt-link:visited,
 .svar a.eksternt-link:hover,
