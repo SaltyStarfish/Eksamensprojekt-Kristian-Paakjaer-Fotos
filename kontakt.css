@@ -162,4 +162,17 @@
     max-width: 400px; /*så den ikke bliver for bred i området lige efter breakpointet*/
     margin-inline: auto; /*centerer boxen*/
   }
+
+  .section_hero.billeder-bund .div_hero-container {
+    height: auto; /* auto-højden følger indholdet*/
+  }
+
+    .section_hero.billeder-bund .div_hero-content {
+    position: relative; /* forhindrer tekst og billede i at overlappe */
+    flex-direction: column; /* billederne vises lodret */
+  }
+
+  .section_hero.billeder-bund .div_image-wrapper {
+    height: 30vh; /* billederne tilpasses skærmhøjden */
+  }
 }
