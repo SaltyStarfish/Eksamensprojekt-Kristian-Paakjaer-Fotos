@@ -169,7 +169,9 @@
 
     .section_hero.billeder-bund .div_hero-content {
     position: relative; /* forhindrer tekst og billede i at overlappe */
+    display: flex;
     flex-direction: column; /* billederne vises lodret */
+    gap: 10px;
   }
 
   .section_hero.billeder-bund .div_image-wrapper {
