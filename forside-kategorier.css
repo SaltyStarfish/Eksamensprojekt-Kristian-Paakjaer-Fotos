@@ -51,28 +51,28 @@
 }
 
 .section_kategorier .kategori-bryllup{
-  background-image: url(images/bryllup/kristian-paakjaer-bryllupsbillede2.jpg);
+  background-image: url(images/bryllup/hero-2-par-med-blomster-i-forgrunden.jpg);
   background-position: center 25%; /* Juster baggrundsbilledets position - procent afgør hvor billedets "midte" skal være */
 
 }
 
 .section_kategorier .kategori-baby{
-  background-image: url(images/baby/kristian-paakjaer-babybillede10.jpg);
+  background-image: url(images/baby/header-4-baby-kravler-fremad.jpg);
   background-position: center 45%;
 }
 
 .section_kategorier .kategori-familie{
-  background-image: url(images/familie/kristian-paakjaer-familiebilleder4.jpg);
+  background-image: url(images/familie/hero-3-foraeldre-og-soen-i-skoven.jpg);
   background-position: center 15%;
 }
 
 .section_kategorier .kategori-event{
-  background-image: url(images/event/kristian-paakjaer-eventbilleder11.jpg);
+  background-image: url(images/event/dronefoto-festival.jpg);
   background-position: center 45%;
 }
 
 .section_kategorier .kategori-erhverv{
-  background-image: url(images/erhverv/kristian-paakjaer-erhvervsbilleder2.jpg);
+  background-image: url(images/erhverv/header-1-fornem-mad-anrettes.jpg);
 }
 
 .section_kategorier a{
