@@ -30,7 +30,6 @@
 
 .tekstboks {
     max-width: 400px;
-    min-width: 250px;
 }
 
 .tekstboks h2 {
@@ -113,8 +112,7 @@
     }
 
     .billedboks img {
-        width: 70%;
-        max-width: 300px;
+        width: 100%;
         height: auto;
     }
 }
